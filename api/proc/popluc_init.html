@@ -1,0 +1,1651 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="Documentation for CABLE">
+    <meta name="author" content="CABLE community" >
+    <link rel="icon" href="../favicon.png">
+
+    <title>POPLUC_Init &ndash; CABLE</title>
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/pygments.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/local.css" rel="stylesheet">
+      <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+         <script src="../js/jquery-2.1.3.min.js"></script>
+         <script src="../js/svg-pan-zoom.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html">CABLE </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown hidden-xs visible-sm visible-md hidden-lg">
+              <a href="#" class="dropdown-toggle"
+                 data-toggle="dropdown" role="button"
+                 aria-haspopup="true"
+                 aria-expanded="false">
+                 Contents <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                    <li><a href="../lists/files.html">Source Files</a></li>
+                  <li><a href="../lists/modules.html">Modules</a></li>
+                  <li><a href="../lists/procedures.html">Procedures</a></li>
+                  <li><a href="../lists/types.html">Derived Types</a></li>
+                  <li><a href="../lists/programs.html">Programs</a></li>
+              </ul>
+            </li>
+                <li class="visible-xs hidden-sm visible-lg">
+                  <a href="../lists/files.html">Source Files</a>
+                </li>
+              <li class="visible-xs hidden-sm visible-lg">
+                <a href="../lists/modules.html">Modules</a>
+              </li>
+              <li class="visible-xs hidden-sm visible-lg">
+                <a href="../lists/procedures.html">Procedures</a>
+              </li>
+              <li class="visible-xs hidden-sm visible-lg">
+                <a href="../lists/types.html">Derived Types</a>
+              </li>
+              <li class="visible-xs hidden-sm visible-lg">
+                <a href="../lists/programs.html">Programs</a>
+              </li>
+          </ul>
+            <form action="../search.html" class="navbar-form navbar-right" role="search">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search" name="q" id="tipue_search_input" autocomplete="off" required>
+              </div>
+              <!--
+                  <button type="submit" class="btn btn-default">Submit</button>
+                  -->
+            </form>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+  <div class="row">
+    <h1>POPLUC_Init
+      <small>Subroutine</small>
+      
+    </h1>
+      <div class="row" id="info-bar">
+    <div class="col-lg-12">
+      <div class="well well-sm">
+        <ul class="list-inline" style="margin-bottom:0px;display:inline">
+
+          <li id="statements"><i class="fa fa-list-ol"></i>
+            <a data-toggle="tooltip"
+               data-placement="bottom" data-html="true"
+               title=" 0.1% of total for procedures.">65 statements</a>
+          </li>
+
+            <li id="source-file">
+              <i class="fa fa-code"></i>
+              <a href="../src/POPLUC.F90"> Source File</a>
+            </li>
+        </ul>
+        <ol class="breadcrumb in-well text-right">
+              <li><a href='../sourcefile/popluc.f90.html'>POPLUC.F90</a></li>
+              <li><a href='../module/popluc_module.html'>POPLUC_Module</a></li>
+          <li class="active">POPLUC_Init</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <script>
+    $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+    })
+  </script>
+
+  </div>
+  
+  <div class="row">
+    <div class="col-md-3 hidden-xs hidden-sm visible-md visible-lg">
+      <div id="sidebar">
+      <h3>Contents</h3>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+  </div>
+
+    </div>
+    
+    <div class="col-md-9" id='text'>
+    <h2>public  subroutine POPLUC_Init(POPLUC, LUC_EXPT, casapool, casaflux, casabiome, veg, POP, np)  
+</h2>
+        <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Uses</h3>
+      </div>
+      <ul class="list-group">
+          <li class="list-group-item">
+            <ul class="list-inline">
+                <li><a href='../module/cable_def_types_mod.html'>cable_def_types_mod</a></li>
+                <li><a href='../module/casaparm.html'>casaparm</a></li>
+            </ul>
+          </li>
+          <li class="list-group-item">
+            <div class="depgraph"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.43.0 (0)
+ -->
+<!-- Title: proc~~popluc_init~~UsesGraph Pages: 1 -->
+<svg id="procpopluc_initUsesGraph" width="569pt" height="52pt"
+ viewBox="0.00 0.00 569.00 52.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="proc~~popluc_init~~UsesGraph" class="graph" transform="scale(1 1) rotate(0) translate(4 48)">
+<title>proc~~popluc_init~~UsesGraph</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-48 565,-48 565,4 -4,4"/>
+<!-- proc~popluc_init -->
+<g id="proc~~popluc_init~~UsesGraph_node1" class="node">
+<title>proc~popluc_init</title>
+<polygon fill="none" stroke="black" points="561,-44 394,-44 394,-20 561,-20 561,-44"/>
+<text text-anchor="middle" x="477.5" y="-29.6" font-family="Helvetica,sans-Serif" font-size="10.50">POPLUC_Module::POPLUC_Init</text>
+</g>
+<!-- module~cable_def_types_mod -->
+<g id="proc~~popluc_init~~UsesGraph_node2" class="node">
+<title>module~cable_def_types_mod</title>
+<g id="a_proc~~popluc_init~~UsesGraph_node2"><a xlink:href=".././module/cable_def_types_mod.html" xlink:title="cable_def_types_mod">
+<polygon fill="#337ab7" stroke="#337ab7" points="127,-44 0,-44 0,-20 127,-20 127,-44"/>
+<text text-anchor="middle" x="63.5" y="-29.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">cable_def_types_mod</text>
+</a>
+</g>
+</g>
+<!-- proc~popluc_init&#45;&gt;module~cable_def_types_mod -->
+<g id="proc~~popluc_init~~UsesGraph_edge1" class="edge">
+<title>proc~popluc_init&#45;&gt;module~cable_def_types_mod</title>
+<path fill="none" stroke="#255000" stroke-dasharray="5,2" d="M393.95,-32.79C381.89,-32.87 369.62,-32.95 358,-33 271.33,-33.37 249.67,-33.44 163,-33 154.64,-32.96 145.88,-32.89 137.19,-32.82"/>
+<polygon fill="#255000" stroke="#255000" points="137.06,-29.32 127.03,-32.73 137,-36.32 137.06,-29.32"/>
+</g>
+<!-- module~casaparm -->
+<g id="proc~~popluc_init~~UsesGraph_node3" class="node">
+<title>module~casaparm</title>
+<g id="a_proc~~popluc_init~~UsesGraph_node3"><a xlink:href=".././module/casaparm.html" xlink:title="casaparm">
+<polygon fill="#337ab7" stroke="#337ab7" points="358,-24 292,-24 292,0 358,0 358,-24"/>
+<text text-anchor="middle" x="325" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">casaparm</text>
+</a>
+</g>
+</g>
+<!-- proc~popluc_init&#45;&gt;module~casaparm -->
+<g id="proc~~popluc_init~~UsesGraph_edge2" class="edge">
+<title>proc~popluc_init&#45;&gt;module~casaparm</title>
+<path fill="none" stroke="#255000" stroke-dasharray="5,2" d="M393.77,-21.01C385.03,-19.84 376.42,-18.7 368.44,-17.64"/>
+<polygon fill="#255000" stroke="#255000" points="368.7,-14.14 358.33,-16.3 367.78,-21.08 368.7,-14.14"/>
+</g>
+<!-- module~casadimension -->
+<g id="proc~~popluc_init~~UsesGraph_node4" class="node">
+<title>module~casadimension</title>
+<g id="a_proc~~popluc_init~~UsesGraph_node4"><a xlink:href=".././module/casadimension.html" xlink:title="casadimension">
+<polygon fill="#337ab7" stroke="#337ab7" points="256,-24 163,-24 163,0 256,0 256,-24"/>
+<text text-anchor="middle" x="209.5" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">casadimension</text>
+</a>
+</g>
+</g>
+<!-- module~casaparm&#45;&gt;module~casadimension -->
+<g id="proc~~popluc_init~~UsesGraph_edge3" class="edge">
+<title>module~casaparm&#45;&gt;module~casadimension</title>
+<path fill="none" stroke="#025525" stroke-dasharray="5,2" stroke-opacity="0.019608" d="M291.78,-12C283.87,-12 275.16,-12 266.49,-12"/>
+<polygon fill="#025525" fill-opacity="0.019608" stroke="#025525" stroke-opacity="0.019608" points="266.36,-8.5 256.36,-12 266.36,-15.5 266.36,-8.5"/>
+</g>
+<!-- module~casadimension&#45;&gt;module~cable_def_types_mod -->
+<g id="proc~~popluc_init~~UsesGraph_edge4" class="edge">
+<title>module~casadimension&#45;&gt;module~cable_def_types_mod</title>
+<path fill="none" stroke="#255000" stroke-dasharray="5,2" d="M162.94,-18.33C154.68,-19.48 145.87,-20.7 137.06,-21.92"/>
+<polygon fill="#255000" stroke="#255000" points="136.56,-18.46 127.14,-23.3 137.52,-25.39 136.56,-18.46"/>
+</g>
+</g>
+</svg>
+</div>        <div><a type="button" class="graph-help" data-toggle="modal" href="#graph-help-text">Help</a></div>
+          <div class="modal fade" id="graph-help-text" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                  <h4 class="modal-title" id="-graph-help-label">Graph Key</h4>
+                </div>
+              <div class="modal-body">
+<p>Nodes of different colours represent the following: </p>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.43.0 (0)
+ -->
+<!-- Title: Graph Key Pages: 1 -->
+<svg width="518pt" height="32pt"
+ viewBox="0.00 0.00 517.50 32.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 28)">
+<title>Graph Key</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-28 513.5,-28 513.5,4 -4,4"/>
+<!-- Module -->
+<g id="node1" class="node">
+<title>Module</title>
+<polygon fill="#337ab7" stroke="#337ab7" points="54,-24 0,-24 0,0 54,0 54,-24"/>
+<text text-anchor="middle" x="27" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Module</text>
+</g>
+<!-- Submodule -->
+<g id="node2" class="node">
+<title>Submodule</title>
+<polygon fill="#5bc0de" stroke="#5bc0de" points="145.5,-24 72.5,-24 72.5,0 145.5,0 145.5,-24"/>
+<text text-anchor="middle" x="109" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Submodule</text>
+</g>
+<!-- Subroutine -->
+<g id="node3" class="node">
+<title>Subroutine</title>
+<polygon fill="#d9534f" stroke="#d9534f" points="234,-24 164,-24 164,0 234,0 234,-24"/>
+<text text-anchor="middle" x="199" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Subroutine</text>
+</g>
+<!-- Function -->
+<g id="node4" class="node">
+<title>Function</title>
+<polygon fill="#d94e8f" stroke="#d94e8f" points="310,-24 252,-24 252,0 310,0 310,-24"/>
+<text text-anchor="middle" x="281" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Function</text>
+</g>
+<!-- Program -->
+<g id="node5" class="node">
+<title>Program</title>
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="386,-24 328,-24 328,0 386,0 386,-24"/>
+<text text-anchor="middle" x="357" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Program</text>
+</g>
+<!-- This Page&#39;s Entity -->
+<g id="node6" class="node">
+<title>This Page&#39;s Entity</title>
+<polygon fill="none" stroke="black" points="509.5,-24 404.5,-24 404.5,0 509.5,0 509.5,-24"/>
+<text text-anchor="middle" x="457" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50">This Page&#39;s Entity</text>
+</g>
+</g>
+</svg>
+
+<p>Solid arrows point from a submodule to the (sub)module which it is
+descended from. Dashed arrows point from a module or program unit to 
+modules which it uses.
+</p>
+ Where possible, edges connecting nodes are
+given different colours to make them easier to distinguish in
+large graphs.</div>
+            </div>
+          </div>
+        </div>
+          </li>
+      </ul>
+    </div>
+
+
+
+
+    <h3>Arguments</h3>
+        <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th>Type</th>
+<th>Intent</th><th>Optional</th>        <th>Attributes</th>
+        <th></th>
+        <th>Name</th>
+        <th></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-popluc~13"></span>
+              type(<a href='../type/popluc_type.html'>POPLUC_TYPE</a>),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>POPLUC</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-luc_expt~14"></span>
+              type(<a href='../type/luc_expt_type.html'>LUC_EXPT_TYPE</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>LUC_EXPT</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-casapool~53"></span>
+              type(<a href='../type/casa_pool.html'>casa_pool</a>),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>casapool</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-casaflux~55"></span>
+              type(<a href='../type/casa_flux.html'>casa_flux</a>),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>casaflux</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-casabiome~40"></span>
+              type(<a href='../type/casa_biome.html'>casa_biome</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>casabiome</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-veg~110"></span>
+              type(<a href='../type/veg_parameter_type.html'>veg_parameter_type</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>veg</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-pop~16"></span>
+              type(<a href='../type/pop_type.html'>POP_TYPE</a>),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>POP</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-np~10"></span>
+              integer(kind=i4b),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>np</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <br>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+  <h3 class="panel-title">Calls</h3>
+      </div>
+      <div class="panel-body">
+  <div class="depgraph"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.43.0 (0)
+ -->
+<!-- Title: proc~~popluc_init~~CallsGraph Pages: 1 -->
+<svg id="procpopluc_initCallsGraph" width="641pt" height="1097pt"
+ viewBox="0.00 0.00 641.00 1096.62" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="proc~~popluc_init~~CallsGraph" class="graph" transform="scale(1.79 1.79) rotate(0) translate(4 1960)">
+<title>proc~~popluc_init~~CallsGraph</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-1960 1144,-1960 1144,4 -4,4"/>
+<!-- proc~popluc_init -->
+<g id="proc~~popluc_init~~CallsGraph_node1" class="node">
+<title>proc~popluc_init</title>
+<polygon fill="none" stroke="black" points="167,-486 0,-486 0,-462 167,-462 167,-486"/>
+<text text-anchor="middle" x="83.5" y="-471.6" font-family="Helvetica,sans-Serif" font-size="10.50">POPLUC_Module::POPLUC_Init</text>
+</g>
+<!-- cplant -->
+<g id="proc~~popluc_init~~CallsGraph_node2" class="node">
+<title>cplant</title>
+<polygon fill="#777777" stroke="#777777" points="346.5,-1305 292.5,-1305 292.5,-1281 346.5,-1281 346.5,-1305"/>
+<text text-anchor="middle" x="319.5" y="-1290.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">cplant</text>
+</g>
+<!-- proc~popluc_init&#45;&gt;cplant -->
+<g id="proc~~popluc_init~~CallsGraph_edge1" class="edge">
+<title>proc~popluc_init&#45;&gt;cplant</title>
+<path fill="none" stroke="#255000" d="M84.45,-486.25C84.35,-577.71 88.29,-1153.51 203,-1272 223.06,-1292.72 256.23,-1296.95 281.89,-1296.59"/>
+<polygon fill="#255000" stroke="#255000" points="282.16,-1300.08 292.02,-1296.21 281.89,-1293.09 282.16,-1300.08"/>
+</g>
+<!-- iwood -->
+<g id="proc~~popluc_init~~CallsGraph_node3" class="node">
+<title>iwood</title>
+<polygon fill="#777777" stroke="#777777" points="346.5,-1263 292.5,-1263 292.5,-1239 346.5,-1239 346.5,-1263"/>
+<text text-anchor="middle" x="319.5" y="-1248.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">iwood</text>
+</g>
+<!-- proc~popluc_init&#45;&gt;iwood -->
+<g id="proc~~popluc_init~~CallsGraph_edge2" class="edge">
+<title>proc~popluc_init&#45;&gt;iwood</title>
+<path fill="none" stroke="#255000" d="M84.56,-486.17C85.26,-574.62 93.97,-1118.28 203,-1230 223.14,-1250.64 256.31,-1254.88 281.94,-1254.54"/>
+<polygon fill="#255000" stroke="#255000" points="282.19,-1258.03 292.06,-1254.17 281.94,-1251.04 282.19,-1258.03"/>
+</g>
+<!-- prim_only -->
+<g id="proc~~popluc_init~~CallsGraph_node4" class="node">
+<title>prim_only</title>
+<polygon fill="#777777" stroke="#777777" points="352,-1221 287,-1221 287,-1197 352,-1197 352,-1221"/>
+<text text-anchor="middle" x="319.5" y="-1206.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">prim_only</text>
+</g>
+<!-- proc~popluc_init&#45;&gt;prim_only -->
+<g id="proc~~popluc_init~~CallsGraph_edge3" class="edge">
+<title>proc~popluc_init&#45;&gt;prim_only</title>
+<path fill="none" stroke="#255000" d="M84.68,-486.04C86.21,-571.26 99.63,-1083.02 203,-1188 221.83,-1207.12 251.85,-1212.13 276.57,-1212.48"/>
+<polygon fill="#255000" stroke="#255000" points="276.82,-1215.98 286.79,-1212.38 276.75,-1208.98 276.82,-1215.98"/>
+</g>
+<!-- proc~alloc_popluc -->
+<g id="proc~~popluc_init~~CallsGraph_node5" class="node">
+<title>proc~alloc_popluc</title>
+<g id="a_proc~~popluc_init~~CallsGraph_node5"><a xlink:href=".././proc/alloc_popluc.html" xlink:title="POPLUC_Module::alloc_POPLUC">
+<polygon fill="#d9534f" stroke="#d9534f" points="407.5,-1179 231.5,-1179 231.5,-1155 407.5,-1155 407.5,-1179"/>
+<text text-anchor="middle" x="319.5" y="-1164.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">POPLUC_Module::alloc_POPLUC</text>
+</a>
+</g>
+</g>
+<!-- proc~popluc_init&#45;&gt;proc~alloc_popluc -->
+<g id="proc~~popluc_init~~CallsGraph_edge4" class="edge">
+<title>proc~popluc_init&#45;&gt;proc~alloc_popluc</title>
+<path fill="none" stroke="#255000" d="M88.56,-486.03C116.05,-567.44 274.86,-1037.75 311.13,-1145.16"/>
+<polygon fill="#255000" stroke="#255000" points="307.9,-1146.56 314.42,-1154.91 314.54,-1144.32 307.9,-1146.56"/>
+</g>
+<!-- proc~pop_init_single -->
+<g id="proc~~popluc_init~~CallsGraph_node6" class="node">
+<title>proc~pop_init_single</title>
+<g id="a_proc~~popluc_init~~CallsGraph_node6"><a xlink:href=".././proc/pop_init_single.html" xlink:title="POPModule::POP_init_single">
+<polygon fill="#d9534f" stroke="#d9534f" points="398.5,-423 240.5,-423 240.5,-399 398.5,-399 398.5,-423"/>
+<text text-anchor="middle" x="319.5" y="-408.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">POPModule::POP_init_single</text>
+</a>
+</g>
+</g>
+<!-- proc~popluc_init&#45;&gt;proc~pop_init_single -->
+<g id="proc~~popluc_init~~CallsGraph_edge5" class="edge">
+<title>proc~popluc_init&#45;&gt;proc~pop_init_single</title>
+<path fill="none" stroke="#255000" d="M129.34,-461.93C167.71,-451.6 223.08,-436.69 264,-425.67"/>
+<polygon fill="#255000" stroke="#255000" points="265.06,-429.01 273.81,-423.03 263.24,-422.25 265.06,-429.01"/>
+</g>
+<!-- proc~popluc_set_params -->
+<g id="proc~~popluc_init~~CallsGraph_node7" class="node">
+<title>proc~popluc_set_params</title>
+<g id="a_proc~~popluc_init~~CallsGraph_node7"><a xlink:href=".././proc/popluc_set_params.html" xlink:title="POPLUC_Module::POPLUC_set_params">
+<polygon fill="#d9534f" stroke="#d9534f" points="425.5,-528 213.5,-528 213.5,-504 425.5,-504 425.5,-528"/>
+<text text-anchor="middle" x="319.5" y="-513.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">POPLUC_Module::POPLUC_set_params</text>
+</a>
+</g>
+</g>
+<!-- proc~popluc_init&#45;&gt;proc~popluc_set_params -->
+<g id="proc~~popluc_init~~CallsGraph_edge6" class="edge">
+<title>proc~popluc_init&#45;&gt;proc~popluc_set_params</title>
+<path fill="none" stroke="#255000" d="M151.56,-486.04C179.58,-491.07 212.32,-496.94 241.34,-502.15"/>
+<polygon fill="#255000" stroke="#255000" points="240.97,-505.64 251.44,-503.96 242.21,-498.75 240.97,-505.64"/>
+</g>
+<!-- proc~read_luc_restart_nc -->
+<g id="proc~~popluc_init~~CallsGraph_node8" class="node">
+<title>proc~read_luc_restart_nc</title>
+<g id="a_proc~~popluc_init~~CallsGraph_node8"><a xlink:href=".././proc/read_luc_restart_nc.html" xlink:title="POPLUC_Module::READ_LUC_RESTART_NC">
+<polygon fill="#d9534f" stroke="#d9534f" points="436,-255 203,-255 203,-231 436,-231 436,-255"/>
+<text text-anchor="middle" x="319.5" y="-240.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">POPLUC_Module::READ_LUC_RESTART_NC</text>
+</a>
+</g>
+</g>
+<!-- proc~popluc_init&#45;&gt;proc~read_luc_restart_nc -->
+<g id="proc~~popluc_init~~CallsGraph_edge7" class="edge">
+<title>proc~popluc_init&#45;&gt;proc~read_luc_restart_nc</title>
+<path fill="none" stroke="#255000" d="M96.75,-461.91C134.97,-424.18 252.21,-308.44 298.96,-262.29"/>
+<polygon fill="#255000" stroke="#255000" points="301.43,-264.77 306.09,-255.25 296.51,-259.79 301.43,-264.77"/>
+</g>
+<!-- proc~zeropopluc -->
+<g id="proc~~popluc_init~~CallsGraph_node9" class="node">
+<title>proc~zeropopluc</title>
+<g id="a_proc~~popluc_init~~CallsGraph_node9"><a xlink:href=".././proc/zeropopluc.html" xlink:title="POPLUC_Module::ZeroPOPLUC">
+<polygon fill="#d9534f" stroke="#d9534f" points="404.5,-213 234.5,-213 234.5,-189 404.5,-189 404.5,-213"/>
+<text text-anchor="middle" x="319.5" y="-198.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">POPLUC_Module::ZeroPOPLUC</text>
+</a>
+</g>
+</g>
+<!-- proc~popluc_init&#45;&gt;proc~zeropopluc -->
+<g id="proc~~popluc_init~~CallsGraph_edge8" class="edge">
+<title>proc~popluc_init&#45;&gt;proc~zeropopluc</title>
+<path fill="none" stroke="#255000" d="M86.26,-461.84C92.9,-420.67 120.41,-285.51 203,-222 209.55,-216.97 216.92,-213 224.68,-209.89"/>
+<polygon fill="#255000" stroke="#255000" points="226.05,-213.12 234.32,-206.5 223.73,-206.51 226.05,-213.12"/>
+</g>
+<!-- rationcplantmin -->
+<g id="proc~~popluc_init~~CallsGraph_node10" class="node">
+<title>rationcplantmin</title>
+<polygon fill="#777777" stroke="#777777" points="368,-171 271,-171 271,-147 368,-147 368,-171"/>
+<text text-anchor="middle" x="319.5" y="-156.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">rationcplantmin</text>
+</g>
+<!-- proc~popluc_init&#45;&gt;rationcplantmin -->
+<g id="proc~~popluc_init~~CallsGraph_edge9" class="edge">
+<title>proc~popluc_init&#45;&gt;rationcplantmin</title>
+<path fill="none" stroke="#255000" d="M85.38,-461.81C89.37,-416.43 109.79,-255.96 203,-180 219.08,-166.89 240.64,-160.89 260.77,-158.41"/>
+<polygon fill="#255000" stroke="#255000" points="261.21,-161.89 270.82,-157.44 260.53,-154.92 261.21,-161.89"/>
+</g>
+<!-- ratiopcplantmin -->
+<g id="proc~~popluc_init~~CallsGraph_node11" class="node">
+<title>ratiopcplantmin</title>
+<polygon fill="#777777" stroke="#777777" points="368,-129 271,-129 271,-105 368,-105 368,-129"/>
+<text text-anchor="middle" x="319.5" y="-114.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">ratiopcplantmin</text>
+</g>
+<!-- proc~popluc_init&#45;&gt;ratiopcplantmin -->
+<g id="proc~~popluc_init~~CallsGraph_edge10" class="edge">
+<title>proc~popluc_init&#45;&gt;ratiopcplantmin</title>
+<path fill="none" stroke="#255000" d="M84.71,-461.85C86.24,-412.65 98.96,-226.67 203,-138 218.86,-124.49 240.47,-118.42 260.71,-116"/>
+<polygon fill="#255000" stroke="#255000" points="261.18,-119.47 270.82,-115.07 260.54,-112.5 261.18,-119.47"/>
+</g>
+<!-- age_history_secdf -->
+<g id="proc~~popluc_init~~CallsGraph_node13" class="node">
+<title>age_history_secdf</title>
+<polygon fill="#777777" stroke="#777777" points="649,-1410 541,-1410 541,-1386 649,-1386 649,-1410"/>
+<text text-anchor="middle" x="595" y="-1395.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">age_history_secdf</text>
+</g>
+<!-- proc~alloc_popluc&#45;&gt;age_history_secdf -->
+<g id="proc~~popluc_init~~CallsGraph_edge11" class="edge">
+<title>proc~alloc_popluc&#45;&gt;age_history_secdf</title>
+<path fill="none" stroke="#512550" d="M407.58,-1170.91C418.17,-1174.64 428.04,-1180.11 436,-1188 496.72,-1248.21 411,-1317.07 472,-1377 487.35,-1392.08 509.35,-1398.58 530.46,-1400.9"/>
+<polygon fill="#512550" stroke="#512550" points="530.46,-1404.41 540.71,-1401.72 531.02,-1397.43 530.46,-1404.41"/>
+</g>
+<!-- area_history_secdf -->
+<g id="proc~~popluc_init~~CallsGraph_node14" class="node">
+<title>area_history_secdf</title>
+<polygon fill="#777777" stroke="#777777" points="651,-1368 539,-1368 539,-1344 651,-1344 651,-1368"/>
+<text text-anchor="middle" x="595" y="-1353.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">area_history_secdf</text>
+</g>
+<!-- proc~alloc_popluc&#45;&gt;area_history_secdf -->
+<g id="proc~~popluc_init~~CallsGraph_edge12" class="edge">
+<title>proc~alloc_popluc&#45;&gt;area_history_secdf</title>
+<path fill="none" stroke="#512550" d="M407.78,-1171.5C418.21,-1175.16 427.99,-1180.46 436,-1188 484.98,-1234.11 422.81,-1289.12 472,-1335 487.26,-1349.23 508.5,-1355.69 528.99,-1358.22"/>
+<polygon fill="#512550" stroke="#512550" points="528.67,-1361.71 538.95,-1359.17 529.33,-1354.74 528.67,-1361.71"/>
+</g>
+<!-- biomass_age_primary -->
+<g id="proc~~popluc_init~~CallsGraph_node15" class="node">
+<title>biomass_age_primary</title>
+<polygon fill="#777777" stroke="#777777" points="660,-1326 530,-1326 530,-1302 660,-1302 660,-1326"/>
+<text text-anchor="middle" x="595" y="-1311.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">biomass_age_primary</text>
+</g>
+<!-- proc~alloc_popluc&#45;&gt;biomass_age_primary -->
+<g id="proc~~popluc_init~~CallsGraph_edge13" class="edge">
+<title>proc~alloc_popluc&#45;&gt;biomass_age_primary</title>
+<path fill="none" stroke="#512550" d="M407.75,-1172.39C418.06,-1175.93 427.81,-1180.96 436,-1188 473.41,-1220.16 434.44,-1261.01 472,-1293 485.34,-1304.36 502.55,-1310.61 519.81,-1313.86"/>
+<polygon fill="#512550" stroke="#512550" points="519.54,-1317.36 529.96,-1315.44 520.61,-1310.44 519.54,-1317.36"/>
+</g>
+<!-- biomass_age_secondary -->
+<g id="proc~~popluc_init~~CallsGraph_node16" class="node">
+<title>biomass_age_secondary</title>
+<polygon fill="#777777" stroke="#777777" points="666.5,-1284 523.5,-1284 523.5,-1260 666.5,-1260 666.5,-1284"/>
+<text text-anchor="middle" x="595" y="-1269.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">biomass_age_secondary</text>
+</g>
+<!-- proc~alloc_popluc&#45;&gt;biomass_age_secondary -->
+<g id="proc~~popluc_init~~CallsGraph_edge14" class="edge">
+<title>proc~alloc_popluc&#45;&gt;biomass_age_secondary</title>
+<path fill="none" stroke="#512550" d="M407.75,-1174.28C417.83,-1177.55 427.51,-1182 436,-1188 462.33,-1206.63 445.59,-1232.5 472,-1251 484.16,-1259.52 498.63,-1264.97 513.29,-1268.38"/>
+<polygon fill="#512550" stroke="#512550" points="512.95,-1271.88 523.45,-1270.44 514.34,-1265.02 512.95,-1271.88"/>
+</g>
+<!-- cbiomass -->
+<g id="proc~~popluc_init~~CallsGraph_node18" class="node">
+<title>cbiomass</title>
+<polygon fill="#777777" stroke="#777777" points="626.5,-1242 563.5,-1242 563.5,-1218 626.5,-1218 626.5,-1242"/>
+<text text-anchor="middle" x="595" y="-1227.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">cbiomass</text>
+</g>
+<!-- proc~alloc_popluc&#45;&gt;cbiomass -->
+<g id="proc~~popluc_init~~CallsGraph_edge15" class="edge">
+<title>proc~alloc_popluc&#45;&gt;cbiomass</title>
+<path fill="none" stroke="#512550" d="M405.93,-1179.05C416.21,-1181.51 426.44,-1184.47 436,-1188 453.37,-1194.42 454.6,-1202.66 472,-1209 498.12,-1218.51 529,-1223.78 553.15,-1226.65"/>
+<polygon fill="#512550" stroke="#512550" points="553.07,-1230.16 563.39,-1227.78 553.84,-1223.21 553.07,-1230.16"/>
+</g>
+<!-- clearprod -->
+<g id="proc~~popluc_init~~CallsGraph_node19" class="node">
+<title>clearprod</title>
+<polygon fill="#777777" stroke="#777777" points="627,-1200 563,-1200 563,-1176 627,-1176 627,-1200"/>
+<text text-anchor="middle" x="595" y="-1185.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">clearprod</text>
+</g>
+<!-- proc~alloc_popluc&#45;&gt;clearprod -->
+<g id="proc~~popluc_init~~CallsGraph_edge16" class="edge">
+<title>proc~alloc_popluc&#45;&gt;clearprod</title>
+<path fill="none" stroke="#512550" d="M407.79,-1173.7C456.23,-1177.42 514.24,-1181.88 552.5,-1184.81"/>
+<polygon fill="#512550" stroke="#512550" points="552.5,-1188.32 562.74,-1185.6 553.04,-1181.34 552.5,-1188.32"/>
+</g>
+<!-- clearprodloss -->
+<g id="proc~~popluc_init~~CallsGraph_node20" class="node">
+<title>clearprodloss</title>
+<polygon fill="#777777" stroke="#777777" points="637,-1158 553,-1158 553,-1134 637,-1134 637,-1158"/>
+<text text-anchor="middle" x="595" y="-1143.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">clearprodloss</text>
+</g>
+<!-- proc~alloc_popluc&#45;&gt;clearprodloss -->
+<g id="proc~~popluc_init~~CallsGraph_edge17" class="edge">
+<title>proc~alloc_popluc&#45;&gt;clearprodloss</title>
+<path fill="none" stroke="#512550" d="M407.79,-1160.3C452.23,-1156.89 504.73,-1152.85 542.63,-1149.94"/>
+<polygon fill="#512550" stroke="#512550" points="543.21,-1153.41 552.92,-1149.15 542.68,-1146.43 543.21,-1153.41"/>
+</g>
+<!-- clitt -->
+<g id="proc~~popluc_init~~CallsGraph_node21" class="node">
+<title>clitt</title>
+<polygon fill="#777777" stroke="#777777" points="622,-1116 568,-1116 568,-1092 622,-1092 622,-1116"/>
+<text text-anchor="middle" x="595" y="-1101.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">clitt</text>
+</g>
+<!-- proc~alloc_popluc&#45;&gt;clitt -->
+<g id="proc~~popluc_init~~CallsGraph_edge18" class="edge">
+<title>proc~alloc_popluc&#45;&gt;clitt</title>
+<path fill="none" stroke="#512550" d="M359.78,-1154.95C390.21,-1145.89 433.51,-1133.62 472,-1125 500.63,-1118.59 533.41,-1113.04 557.78,-1109.26"/>
+<polygon fill="#512550" stroke="#512550" points="558.31,-1112.72 567.67,-1107.75 557.26,-1105.8 558.31,-1112.72"/>
+</g>
+<!-- csoil -->
+<g id="proc~~popluc_init~~CallsGraph_node22" class="node">
+<title>csoil</title>
+<polygon fill="#777777" stroke="#777777" points="622,-1074 568,-1074 568,-1050 622,-1050 622,-1074"/>
+<text text-anchor="middle" x="595" y="-1059.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">csoil</text>
+</g>
+<!-- proc~alloc_popluc&#45;&gt;csoil -->
+<g id="proc~~popluc_init~~CallsGraph_edge19" class="edge">
+<title>proc~alloc_popluc&#45;&gt;csoil</title>
+<path fill="none" stroke="#512550" d="M337.77,-1154.86C364.98,-1136.34 420.08,-1101.27 472,-1083 499.85,-1073.2 532.94,-1067.87 557.63,-1065.04"/>
+<polygon fill="#512550" stroke="#512550" points="558.08,-1068.51 567.66,-1063.97 557.34,-1061.55 558.08,-1068.51"/>
+</g>
+<!-- fclearance -->
+<g id="proc~~popluc_init~~CallsGraph_node23" class="node">
+<title>fclearance</title>
+<polygon fill="#777777" stroke="#777777" points="630,-1032 560,-1032 560,-1008 630,-1008 630,-1032"/>
+<text text-anchor="middle" x="595" y="-1017.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">fclearance</text>
+</g>
+<!-- proc~alloc_popluc&#45;&gt;fclearance -->
+<g id="proc~~popluc_init~~CallsGraph_edge20" class="edge">
+<title>proc~alloc_popluc&#45;&gt;fclearance</title>
+<path fill="none" stroke="#512550" d="M330.83,-1154.9C353.5,-1129.23 410.49,-1069.37 472,-1041 496.31,-1029.79 525.85,-1024.52 549.77,-1022.06"/>
+<polygon fill="#512550" stroke="#512550" points="550.34,-1025.52 559.99,-1021.14 549.71,-1018.55 550.34,-1025.52"/>
+</g>
+<!-- fharvest -->
+<g id="proc~~popluc_init~~CallsGraph_node24" class="node">
+<title>fharvest</title>
+<polygon fill="#777777" stroke="#777777" points="623,-990 567,-990 567,-966 623,-966 623,-990"/>
+<text text-anchor="middle" x="595" y="-975.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">fharvest</text>
+</g>
+<!-- proc~alloc_popluc&#45;&gt;fharvest -->
+<g id="proc~~popluc_init~~CallsGraph_edge21" class="edge">
+<title>proc~alloc_popluc&#45;&gt;fharvest</title>
+<path fill="none" stroke="#512550" d="M327.47,-1154.75C346.22,-1123.04 401.14,-1038.05 472,-999 497.86,-984.75 531.09,-979.75 556.35,-978.17"/>
+<polygon fill="#512550" stroke="#512550" points="556.81,-981.65 566.63,-977.69 556.48,-974.66 556.81,-981.65"/>
+</g>
+<!-- fnep -->
+<g id="proc~~popluc_init~~CallsGraph_node25" class="node">
+<title>fnep</title>
+<polygon fill="#777777" stroke="#777777" points="622,-948 568,-948 568,-924 622,-924 622,-948"/>
+<text text-anchor="middle" x="595" y="-933.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">fnep</text>
+</g>
+<!-- proc~alloc_popluc&#45;&gt;fnep -->
+<g id="proc~~popluc_init~~CallsGraph_edge22" class="edge">
+<title>proc~alloc_popluc&#45;&gt;fnep</title>
+<path fill="none" stroke="#512550" d="M325.22,-1154.99C340.31,-1118.37 391.16,-1007.48 472,-957 497.64,-940.99 531.92,-936.24 557.62,-935.2"/>
+<polygon fill="#512550" stroke="#512550" points="557.79,-938.69 567.7,-934.96 557.62,-931.7 557.79,-938.69"/>
+</g>
+<!-- frac_forest -->
+<g id="proc~~popluc_init~~CallsGraph_node26" class="node">
+<title>frac_forest</title>
+<polygon fill="#777777" stroke="#777777" points="629.5,-906 560.5,-906 560.5,-882 629.5,-882 629.5,-906"/>
+<text text-anchor="middle" x="595" y="-891.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">frac_forest</text>
+</g>
+<!-- proc~alloc_popluc&#45;&gt;frac_forest -->
+<g id="proc~~popluc_init~~CallsGraph_edge23" class="edge">
+<title>proc~alloc_popluc&#45;&gt;frac_forest</title>
+<path fill="none" stroke="#512550" d="M323.86,-1154.74C335.92,-1113.23 381.21,-977.11 472,-915 494.74,-899.44 525.29,-894.2 550.14,-892.84"/>
+<polygon fill="#512550" stroke="#512550" points="550.53,-896.33 560.4,-892.48 550.28,-889.34 550.53,-896.33"/>
+</g>
+<!-- frac_primf -->
+<g id="proc~~popluc_init~~CallsGraph_node27" class="node">
+<title>frac_primf</title>
+<polygon fill="#777777" stroke="#777777" points="628.5,-864 561.5,-864 561.5,-840 628.5,-840 628.5,-864"/>
+<text text-anchor="middle" x="595" y="-849.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">frac_primf</text>
+</g>
+<!-- proc~alloc_popluc&#45;&gt;frac_primf -->
+<g id="proc~~popluc_init~~CallsGraph_edge24" class="edge">
+<title>proc~alloc_popluc&#45;&gt;frac_primf</title>
+<path fill="none" stroke="#512550" d="M322.79,-1154.7C331.99,-1108.91 370.82,-947.19 472,-873 494.7,-856.36 526.1,-851.25 551.36,-850.22"/>
+<polygon fill="#512550" stroke="#512550" points="551.49,-853.72 561.41,-850.01 551.34,-846.72 551.49,-853.72"/>
+</g>
+<!-- fracclearprod -->
+<g id="proc~~popluc_init~~CallsGraph_node28" class="node">
+<title>fracclearprod</title>
+<polygon fill="#777777" stroke="#777777" points="637.5,-822 552.5,-822 552.5,-798 637.5,-798 637.5,-822"/>
+<text text-anchor="middle" x="595" y="-807.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">fracclearprod</text>
+</g>
+<!-- proc~alloc_popluc&#45;&gt;fracclearprod -->
+<g id="proc~~popluc_init~~CallsGraph_edge25" class="edge">
+<title>proc~alloc_popluc&#45;&gt;fracclearprod</title>
+<path fill="none" stroke="#512550" d="M321.95,-1154.73C328.52,-1105.08 360.18,-917.57 472,-831 491.69,-815.76 518.54,-810.01 542.05,-808.28"/>
+<polygon fill="#512550" stroke="#512550" points="542.42,-811.77 552.23,-807.77 542.06,-804.78 542.42,-811.77"/>
+</g>
+<!-- fracclearresid -->
+<g id="proc~~popluc_init~~CallsGraph_node29" class="node">
+<title>fracclearresid</title>
+<polygon fill="#777777" stroke="#777777" points="638,-780 552,-780 552,-756 638,-756 638,-780"/>
+<text text-anchor="middle" x="595" y="-765.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">fracclearresid</text>
+</g>
+<!-- proc~alloc_popluc&#45;&gt;fracclearresid -->
+<g id="proc~~popluc_init~~CallsGraph_edge26" class="edge">
+<title>proc~alloc_popluc&#45;&gt;fracclearresid</title>
+<path fill="none" stroke="#512550" d="M321.29,-1154.72C325.44,-1101.39 349.41,-888.14 472,-789 491.36,-773.34 518.18,-767.56 541.75,-765.91"/>
+<polygon fill="#512550" stroke="#512550" points="542.14,-769.4 551.96,-765.44 541.81,-762.41 542.14,-769.4"/>
+</g>
+<!-- fracharvprod -->
+<g id="proc~~popluc_init~~CallsGraph_node30" class="node">
+<title>fracharvprod</title>
+<polygon fill="#777777" stroke="#777777" points="636,-738 554,-738 554,-714 636,-714 636,-738"/>
+<text text-anchor="middle" x="595" y="-723.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">fracharvprod</text>
+</g>
+<!-- proc~alloc_popluc&#45;&gt;fracharvprod -->
+<g id="proc~~popluc_init~~CallsGraph_edge27" class="edge">
+<title>proc~alloc_popluc&#45;&gt;fracharvprod</title>
+<path fill="none" stroke="#512550" d="M320.75,-1154.94C322.6,-1098.57 338.33,-859.03 472,-747 491.67,-730.51 519.55,-724.84 543.68,-723.48"/>
+<polygon fill="#512550" stroke="#512550" points="543.89,-726.97 553.77,-723.14 543.65,-719.98 543.89,-726.97"/>
+</g>
+<!-- fracharvresid -->
+<g id="proc~~popluc_init~~CallsGraph_node31" class="node">
+<title>fracharvresid</title>
+<polygon fill="#777777" stroke="#777777" points="636.5,-570 553.5,-570 553.5,-546 636.5,-546 636.5,-570"/>
+<text text-anchor="middle" x="595" y="-555.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">fracharvresid</text>
+</g>
+<!-- proc~alloc_popluc&#45;&gt;fracharvresid -->
+<g id="proc~~popluc_init~~CallsGraph_edge28" class="edge">
+<title>proc~alloc_popluc&#45;&gt;fracharvresid</title>
+<path fill="none" stroke="#512550" d="M321.87,-1154.65C330.71,-1077.46 382.07,-661.86 472,-579 490.95,-561.54 518.9,-555.83 543.27,-554.69"/>
+<polygon fill="#512550" stroke="#512550" points="543.54,-558.18 553.46,-554.46 543.38,-551.19 543.54,-558.18"/>
+</g>
+<!-- fracharvsecresid -->
+<g id="proc~~popluc_init~~CallsGraph_node32" class="node">
+<title>fracharvsecresid</title>
+<polygon fill="#777777" stroke="#777777" points="645.5,-612 544.5,-612 544.5,-588 645.5,-588 645.5,-612"/>
+<text text-anchor="middle" x="595" y="-597.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">fracharvsecresid</text>
+</g>
+<!-- proc~alloc_popluc&#45;&gt;fracharvsecresid -->
+<g id="proc~~popluc_init~~CallsGraph_edge29" class="edge">
+<title>proc~alloc_popluc&#45;&gt;fracharvsecresid</title>
+<path fill="none" stroke="#512550" d="M322.14,-1154.58C332.19,-1080.45 387.74,-697.22 472,-621 488.72,-605.88 512.22,-599.62 534.13,-597.51"/>
+<polygon fill="#512550" stroke="#512550" points="534.66,-600.98 544.39,-596.79 534.18,-593.99 534.66,-600.98"/>
+</g>
+<!-- freq_age_primary -->
+<g id="proc~~popluc_init~~CallsGraph_node33" class="node">
+<title>freq_age_primary</title>
+<polygon fill="#777777" stroke="#777777" points="648,-696 542,-696 542,-672 648,-672 648,-696"/>
+<text text-anchor="middle" x="595" y="-681.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">freq_age_primary</text>
+</g>
+<!-- proc~alloc_popluc&#45;&gt;freq_age_primary -->
+<g id="proc~~popluc_init~~CallsGraph_edge30" class="edge">
+<title>proc~alloc_popluc&#45;&gt;freq_age_primary</title>
+<path fill="none" stroke="#512550" d="M320.31,-1154.99C320.05,-1095.45 327.28,-829.94 472,-705 488.36,-690.88 510.69,-684.61 531.77,-682.2"/>
+<polygon fill="#512550" stroke="#512550" points="532.33,-685.67 541.99,-681.32 531.72,-678.7 532.33,-685.67"/>
+</g>
+<!-- freq_age_secondary -->
+<g id="proc~~popluc_init~~CallsGraph_node34" class="node">
+<title>freq_age_secondary</title>
+<polygon fill="#777777" stroke="#777777" points="655,-654 535,-654 535,-630 655,-630 655,-654"/>
+<text text-anchor="middle" x="595" y="-639.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">freq_age_secondary</text>
+</g>
+<!-- proc~alloc_popluc&#45;&gt;freq_age_secondary -->
+<g id="proc~~popluc_init~~CallsGraph_edge31" class="edge">
+<title>proc~alloc_popluc&#45;&gt;freq_age_secondary</title>
+<path fill="none" stroke="#512550" d="M322.44,-1154.62C333.73,-1083.97 393.33,-732.65 472,-663 486.46,-650.2 505.8,-643.8 524.81,-640.88"/>
+<polygon fill="#512550" stroke="#512550" points="525.5,-644.32 535,-639.63 524.64,-637.37 525.5,-644.32"/>
+</g>
+<!-- ftransfergross -->
+<g id="proc~~popluc_init~~CallsGraph_node35" class="node">
+<title>ftransfergross</title>
+<polygon fill="#777777" stroke="#777777" points="638,-1956 552,-1956 552,-1932 638,-1932 638,-1956"/>
+<text text-anchor="middle" x="595" y="-1941.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">ftransfergross</text>
+</g>
+<!-- proc~alloc_popluc&#45;&gt;ftransfergross -->
+<g id="proc~~popluc_init~~CallsGraph_edge32" class="edge">
+<title>proc~alloc_popluc&#45;&gt;ftransfergross</title>
+<path fill="none" stroke="#512550" d="M407.77,-1169.61C418.54,-1173.48 428.41,-1179.34 436,-1188 489.91,-1249.47 417.8,-1861.78 472,-1923 489.09,-1942.31 516.96,-1948.13 541.75,-1948.87"/>
+<polygon fill="#512550" stroke="#512550" points="541.77,-1952.37 551.78,-1948.9 541.79,-1945.37 541.77,-1952.37"/>
+</g>
+<!-- ftransfernet -->
+<g id="proc~~popluc_init~~CallsGraph_node36" class="node">
+<title>ftransfernet</title>
+<polygon fill="#777777" stroke="#777777" points="633,-1914 557,-1914 557,-1890 633,-1890 633,-1914"/>
+<text text-anchor="middle" x="595" y="-1899.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">ftransfernet</text>
+</g>
+<!-- proc~alloc_popluc&#45;&gt;ftransfernet -->
+<g id="proc~~popluc_init~~CallsGraph_edge33" class="edge">
+<title>proc~alloc_popluc&#45;&gt;ftransfernet</title>
+<path fill="none" stroke="#512550" d="M407.75,-1169.63C418.52,-1173.5 428.39,-1179.35 436,-1188 537.85,-1303.79 369.61,-1765.69 472,-1881 490.27,-1901.57 520.77,-1906.82 546.7,-1906.93"/>
+<polygon fill="#512550" stroke="#512550" points="546.82,-1910.43 556.75,-1906.72 546.68,-1903.43 546.82,-1910.43"/>
+</g>
+<!-- grass -->
+<g id="proc~~popluc_init~~CallsGraph_node37" class="node">
+<title>grass</title>
+<polygon fill="#777777" stroke="#777777" points="622,-1872 568,-1872 568,-1848 622,-1848 622,-1872"/>
+<text text-anchor="middle" x="595" y="-1857.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">grass</text>
+</g>
+<!-- proc~alloc_popluc&#45;&gt;grass -->
+<g id="proc~~popluc_init~~CallsGraph_edge34" class="edge">
+<title>proc~alloc_popluc&#45;&gt;grass</title>
+<path fill="none" stroke="#512550" d="M407.72,-1169.65C418.5,-1173.52 428.38,-1179.37 436,-1188 531.87,-1296.63 375.62,-1730.82 472,-1839 492.98,-1862.55 530,-1866 557.77,-1864.66"/>
+<polygon fill="#512550" stroke="#512550" points="558.18,-1868.14 567.91,-1863.94 557.69,-1861.15 558.18,-1868.14"/>
+</g>
+<!-- gtop -->
+<g id="proc~~popluc_init~~CallsGraph_node38" class="node">
+<title>gtop</title>
+<polygon fill="#777777" stroke="#777777" points="622,-1830 568,-1830 568,-1806 622,-1806 622,-1830"/>
+<text text-anchor="middle" x="595" y="-1815.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">gtop</text>
+</g>
+<!-- proc~alloc_popluc&#45;&gt;gtop -->
+<g id="proc~~popluc_init~~CallsGraph_edge35" class="edge">
+<title>proc~alloc_popluc&#45;&gt;gtop</title>
+<path fill="none" stroke="#512550" d="M407.69,-1169.68C418.47,-1173.54 428.36,-1179.38 436,-1188 525.9,-1289.47 381.62,-1695.95 472,-1797 493.03,-1820.51 530.04,-1823.97 557.8,-1822.64"/>
+<polygon fill="#512550" stroke="#512550" points="558.2,-1826.12 567.93,-1821.92 557.71,-1819.13 558.2,-1826.12"/>
+</g>
+<!-- harvprod -->
+<g id="proc~~popluc_init~~CallsGraph_node39" class="node">
+<title>harvprod</title>
+<polygon fill="#777777" stroke="#777777" points="625.5,-1788 564.5,-1788 564.5,-1764 625.5,-1764 625.5,-1788"/>
+<text text-anchor="middle" x="595" y="-1773.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">harvprod</text>
+</g>
+<!-- proc~alloc_popluc&#45;&gt;harvprod -->
+<g id="proc~~popluc_init~~CallsGraph_edge36" class="edge">
+<title>proc~alloc_popluc&#45;&gt;harvprod</title>
+<path fill="none" stroke="#512550" d="M407.66,-1169.71C418.44,-1173.57 428.35,-1179.4 436,-1188 519.93,-1282.32 387.63,-1661.08 472,-1755 492.19,-1777.47 526.98,-1781.6 554.26,-1780.75"/>
+<polygon fill="#512550" stroke="#512550" points="554.5,-1784.24 564.3,-1780.21 554.12,-1777.25 554.5,-1784.24"/>
+</g>
+<!-- harvprodloss -->
+<g id="proc~~popluc_init~~CallsGraph_node40" class="node">
+<title>harvprodloss</title>
+<polygon fill="#777777" stroke="#777777" points="635.5,-1746 554.5,-1746 554.5,-1722 635.5,-1722 635.5,-1746"/>
+<text text-anchor="middle" x="595" y="-1731.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">harvprodloss</text>
+</g>
+<!-- proc~alloc_popluc&#45;&gt;harvprodloss -->
+<g id="proc~~popluc_init~~CallsGraph_edge37" class="edge">
+<title>proc~alloc_popluc&#45;&gt;harvprodloss</title>
+<path fill="none" stroke="#512550" d="M407.62,-1169.75C418.41,-1173.6 428.32,-1179.42 436,-1188 513.96,-1275.16 393.63,-1626.2 472,-1713 489.79,-1732.7 518.8,-1738.28 544.07,-1738.78"/>
+<polygon fill="#512550" stroke="#512550" points="544.29,-1742.28 554.26,-1738.72 544.24,-1735.28 544.29,-1742.28"/>
+</g>
+<!-- latitude -->
+<g id="proc~~popluc_init~~CallsGraph_node42" class="node">
+<title>latitude</title>
+<polygon fill="#777777" stroke="#777777" points="622,-1704 568,-1704 568,-1680 622,-1680 622,-1704"/>
+<text text-anchor="middle" x="595" y="-1689.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">latitude</text>
+</g>
+<!-- proc~alloc_popluc&#45;&gt;latitude -->
+<g id="proc~~popluc_init~~CallsGraph_edge38" class="edge">
+<title>proc~alloc_popluc&#45;&gt;latitude</title>
+<path fill="none" stroke="#512550" d="M407.57,-1169.79C418.37,-1173.64 428.3,-1179.44 436,-1188 507.99,-1268.01 399.64,-1591.33 472,-1671 493.14,-1694.28 529.97,-1697.81 557.64,-1696.56"/>
+<polygon fill="#512550" stroke="#512550" points="558.01,-1700.04 567.75,-1695.88 557.54,-1693.06 558.01,-1700.04"/>
+</g>
+<!-- longitude -->
+<g id="proc~~popluc_init~~CallsGraph_node43" class="node">
+<title>longitude</title>
+<polygon fill="#777777" stroke="#777777" points="626.5,-1662 563.5,-1662 563.5,-1638 626.5,-1638 626.5,-1662"/>
+<text text-anchor="middle" x="595" y="-1647.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">longitude</text>
+</g>
+<!-- proc~alloc_popluc&#45;&gt;longitude -->
+<g id="proc~~popluc_init~~CallsGraph_edge39" class="edge">
+<title>proc~alloc_popluc&#45;&gt;longitude</title>
+<path fill="none" stroke="#512550" d="M407.52,-1169.84C418.32,-1173.68 428.27,-1179.47 436,-1188 502.02,-1260.86 405.64,-1556.45 472,-1629 492.04,-1650.91 525.98,-1655.29 552.99,-1654.67"/>
+<polygon fill="#512550" stroke="#512550" points="553.5,-1658.15 563.32,-1654.2 553.17,-1651.16 553.5,-1658.15"/>
+</g>
+<!-- pharv -->
+<g id="proc~~popluc_init~~CallsGraph_node50" class="node">
+<title>pharv</title>
+<polygon fill="#777777" stroke="#777777" points="622,-1620 568,-1620 568,-1596 622,-1596 622,-1620"/>
+<text text-anchor="middle" x="595" y="-1605.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">pharv</text>
+</g>
+<!-- proc~alloc_popluc&#45;&gt;pharv -->
+<g id="proc~~popluc_init~~CallsGraph_edge40" class="edge">
+<title>proc~alloc_popluc&#45;&gt;pharv</title>
+<path fill="none" stroke="#512550" d="M407.74,-1170C418.44,-1173.83 428.3,-1179.58 436,-1188 496.06,-1253.72 411.63,-1521.57 472,-1587 493.32,-1610.11 530.12,-1613.66 557.74,-1612.47"/>
+<polygon fill="#512550" stroke="#512550" points="558.08,-1615.95 567.83,-1611.81 557.62,-1608.97 558.08,-1615.95"/>
+</g>
+<!-- primf -->
+<g id="proc~~popluc_init~~CallsGraph_node51" class="node">
+<title>primf</title>
+<polygon fill="#777777" stroke="#777777" points="622,-1578 568,-1578 568,-1554 622,-1554 622,-1578"/>
+<text text-anchor="middle" x="595" y="-1563.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">primf</text>
+</g>
+<!-- proc~alloc_popluc&#45;&gt;primf -->
+<g id="proc~~popluc_init~~CallsGraph_edge41" class="edge">
+<title>proc~alloc_popluc&#45;&gt;primf</title>
+<path fill="none" stroke="#512550" d="M407.66,-1170.07C418.37,-1173.89 428.26,-1179.62 436,-1188 490.1,-1246.57 417.62,-1486.68 472,-1545 493.44,-1568 530.23,-1571.57 557.81,-1570.4"/>
+<polygon fill="#512550" stroke="#512550" points="558.12,-1573.89 567.88,-1569.76 557.68,-1566.91 558.12,-1573.89"/>
+</g>
+<!-- secdf -->
+<g id="proc~~popluc_init~~CallsGraph_node56" class="node">
+<title>secdf</title>
+<polygon fill="#777777" stroke="#777777" points="622,-1536 568,-1536 568,-1512 622,-1512 622,-1536"/>
+<text text-anchor="middle" x="595" y="-1521.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">secdf</text>
+</g>
+<!-- proc~alloc_popluc&#45;&gt;secdf -->
+<g id="proc~~popluc_init~~CallsGraph_edge42" class="edge">
+<title>proc~alloc_popluc&#45;&gt;secdf</title>
+<path fill="none" stroke="#512550" d="M407.56,-1170.17C418.29,-1173.98 428.2,-1179.67 436,-1188 532.29,-1290.88 375.22,-1400.58 472,-1503 493.6,-1525.86 530.36,-1529.45 557.89,-1528.33"/>
+<polygon fill="#512550" stroke="#512550" points="558.18,-1531.81 567.94,-1527.7 557.75,-1524.83 558.18,-1531.81"/>
+</g>
+<!-- smharv -->
+<g id="proc~~popluc_init~~CallsGraph_node57" class="node">
+<title>smharv</title>
+<polygon fill="#777777" stroke="#777777" points="622,-1494 568,-1494 568,-1470 622,-1470 622,-1494"/>
+<text text-anchor="middle" x="595" y="-1479.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">smharv</text>
+</g>
+<!-- proc~alloc_popluc&#45;&gt;smharv -->
+<g id="proc~~popluc_init~~CallsGraph_edge43" class="edge">
+<title>proc~alloc_popluc&#45;&gt;smharv</title>
+<path fill="none" stroke="#512550" d="M407.71,-1170.39C418.35,-1174.18 428.2,-1179.81 436,-1188 520.4,-1276.62 387.18,-1372.78 472,-1461 493.73,-1483.6 530.3,-1487.26 557.75,-1486.23"/>
+<polygon fill="#512550" stroke="#512550" points="558,-1489.72 567.78,-1485.64 557.59,-1482.74 558,-1489.72"/>
+</g>
+<!-- syharv -->
+<g id="proc~~popluc_init~~CallsGraph_node58" class="node">
+<title>syharv</title>
+<polygon fill="#777777" stroke="#777777" points="622,-1452 568,-1452 568,-1428 622,-1428 622,-1452"/>
+<text text-anchor="middle" x="595" y="-1437.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">syharv</text>
+</g>
+<!-- proc~alloc_popluc&#45;&gt;syharv -->
+<g id="proc~~popluc_init~~CallsGraph_edge44" class="edge">
+<title>proc~alloc_popluc&#45;&gt;syharv</title>
+<path fill="none" stroke="#512550" d="M407.54,-1170.56C418.2,-1174.33 428.1,-1179.9 436,-1188 508.54,-1262.39 399.11,-1344.95 472,-1419 493.99,-1441.34 530.53,-1445.04 557.9,-1444.09"/>
+<polygon fill="#512550" stroke="#512550" points="558.1,-1447.58 567.89,-1443.53 557.71,-1440.59 558.1,-1447.58"/>
+</g>
+<!-- proc~initpop2d_poisson -->
+<g id="proc~~popluc_init~~CallsGraph_node53" class="node">
+<title>proc~initpop2d_poisson</title>
+<g id="a_proc~~popluc_init~~CallsGraph_node53"><a xlink:href=".././proc/initpop2d_poisson.html" xlink:title="POPModule::InitPOP2D_Poisson">
+<polygon fill="#d9534f" stroke="#d9534f" points="683,-402 507,-402 507,-378 683,-378 683,-402"/>
+<text text-anchor="middle" x="595" y="-387.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">POPModule::InitPOP2D_Poisson</text>
+</a>
+</g>
+</g>
+<!-- proc~pop_init_single&#45;&gt;proc~initpop2d_poisson -->
+<g id="proc~~popluc_init~~CallsGraph_edge45" class="edge">
+<title>proc~pop_init_single&#45;&gt;proc~initpop2d_poisson</title>
+<path fill="none" stroke="#025510" stroke-opacity="0.007843" d="M398.51,-405.01C429,-402.67 464.3,-399.96 496.44,-397.49"/>
+<polygon fill="#025510" fill-opacity="0.007843" stroke="#025510" stroke-opacity="0.007843" points="497.05,-400.95 506.75,-396.7 496.51,-393.97 497.05,-400.95"/>
+</g>
+<!-- proc~layer_recruitment_single_patch -->
+<g id="proc~~popluc_init~~CallsGraph_node54" class="node">
+<title>proc~layer_recruitment_single_patch</title>
+<g id="a_proc~~popluc_init~~CallsGraph_node54"><a xlink:href=".././proc/layer_recruitment_single_patch.html" xlink:title="POPModule::layer_recruitment_single_patch">
+<polygon fill="#d9534f" stroke="#d9534f" points="718,-444 472,-444 472,-420 718,-420 718,-444"/>
+<text text-anchor="middle" x="595" y="-429.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">POPModule::layer_recruitment_single_patch</text>
+</a>
+</g>
+</g>
+<!-- proc~pop_init_single&#45;&gt;proc~layer_recruitment_single_patch -->
+<g id="proc~~popluc_init~~CallsGraph_edge46" class="edge">
+<title>proc~pop_init_single&#45;&gt;proc~layer_recruitment_single_patch</title>
+<path fill="none" stroke="#025510" stroke-opacity="0.007843" d="M398.51,-416.99C418.27,-418.51 440.06,-420.18 461.69,-421.84"/>
+<polygon fill="#025510" fill-opacity="0.007843" stroke="#025510" stroke-opacity="0.007843" points="461.71,-425.35 471.95,-422.63 462.25,-418.37 461.71,-425.35"/>
+</g>
+<!-- proc~zeropop -->
+<g id="proc~~popluc_init~~CallsGraph_node55" class="node">
+<title>proc~zeropop</title>
+<g id="a_proc~~popluc_init~~CallsGraph_node55"><a xlink:href=".././proc/zeropop.html" xlink:title="POPModule::ZeroPOP">
+<polygon fill="#d9534f" stroke="#d9534f" points="657,-360 533,-360 533,-336 657,-336 657,-360"/>
+<text text-anchor="middle" x="595" y="-345.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">POPModule::ZeroPOP</text>
+</a>
+</g>
+</g>
+<!-- proc~pop_init_single&#45;&gt;proc~zeropop -->
+<g id="proc~~popluc_init~~CallsGraph_edge47" class="edge">
+<title>proc~pop_init_single&#45;&gt;proc~zeropop</title>
+<path fill="none" stroke="#025510" stroke-opacity="0.007843" d="M359.78,-398.95C390.21,-389.89 433.51,-377.62 472,-369 488.33,-365.34 506,-361.97 522.7,-359.04"/>
+<polygon fill="#025510" fill-opacity="0.007843" stroke="#025510" stroke-opacity="0.007843" points="523.69,-362.42 532.95,-357.28 522.5,-355.52 523.69,-362.42"/>
+</g>
+<!-- biome -->
+<g id="proc~~popluc_init~~CallsGraph_node17" class="node">
+<title>biome</title>
+<polygon fill="#777777" stroke="#777777" points="622,-486 568,-486 568,-462 622,-462 622,-486"/>
+<text text-anchor="middle" x="595" y="-471.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">biome</text>
+</g>
+<!-- proc~popluc_set_params&#45;&gt;biome -->
+<g id="proc~~popluc_init~~CallsGraph_edge48" class="edge">
+<title>proc~popluc_set_params&#45;&gt;biome</title>
+<path fill="none" stroke="#025525" stroke-opacity="0.019608" d="M398.87,-503.96C451.29,-495.91 517.8,-485.7 558.07,-479.52"/>
+<polygon fill="#025525" fill-opacity="0.019608" stroke="#025525" stroke-opacity="0.019608" points="558.61,-482.98 567.96,-478 557.55,-476.06 558.61,-482.98"/>
+</g>
+<!-- proc~popluc_set_params&#45;&gt;fracharvresid -->
+<g id="proc~~popluc_init~~CallsGraph_edge49" class="edge">
+<title>proc~popluc_set_params&#45;&gt;fracharvresid</title>
+<path fill="none" stroke="#025525" stroke-opacity="0.019608" d="M398.87,-528.04C445.29,-535.16 502.76,-543.99 543.27,-550.21"/>
+<polygon fill="#025525" fill-opacity="0.019608" stroke="#025525" stroke-opacity="0.019608" points="542.77,-553.67 553.19,-551.73 543.84,-546.76 542.77,-553.67"/>
+</g>
+<!-- proc~popluc_set_params&#45;&gt;fracharvsecresid -->
+<g id="proc~~popluc_init~~CallsGraph_edge50" class="edge">
+<title>proc~popluc_set_params&#45;&gt;fracharvsecresid</title>
+<path fill="none" stroke="#025525" stroke-opacity="0.019608" d="M344.82,-528.11C374.25,-542.29 425.63,-565.55 472,-579 492.04,-584.81 514.43,-589.24 534.5,-592.49"/>
+<polygon fill="#025525" fill-opacity="0.019608" stroke="#025525" stroke-opacity="0.019608" points="534.04,-595.96 544.46,-594.04 535.11,-589.04 534.04,-595.96"/>
+</g>
+<!-- ivegp -->
+<g id="proc~~popluc_init~~CallsGraph_node41" class="node">
+<title>ivegp</title>
+<polygon fill="#777777" stroke="#777777" points="622,-528 568,-528 568,-504 622,-504 622,-528"/>
+<text text-anchor="middle" x="595" y="-513.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">ivegp</text>
+</g>
+<!-- proc~popluc_set_params&#45;&gt;ivegp -->
+<g id="proc~~popluc_init~~CallsGraph_edge51" class="edge">
+<title>proc~popluc_set_params&#45;&gt;ivegp</title>
+<path fill="none" stroke="#025525" stroke-opacity="0.019608" d="M425.85,-516C472.29,-516 523.83,-516 557.46,-516"/>
+<polygon fill="#025525" fill-opacity="0.019608" stroke="#025525" stroke-opacity="0.019608" points="557.72,-519.5 567.72,-516 557.72,-512.5 557.72,-519.5"/>
+</g>
+<!-- 1000 -->
+<g id="proc~~popluc_init~~CallsGraph_node12" class="node">
+<title>1000</title>
+<polygon fill="#777777" stroke="#777777" points="622,-108 568,-108 568,-84 622,-84 622,-108"/>
+<text text-anchor="middle" x="595" y="-93.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">1000</text>
+</g>
+<!-- proc~read_luc_restart_nc&#45;&gt;1000 -->
+<g id="proc~~popluc_init~~CallsGraph_edge52" class="edge">
+<title>proc~read_luc_restart_nc&#45;&gt;1000</title>
+<path fill="none" stroke="#010225" stroke-opacity="0.019608" d="M422.94,-230.97C427.59,-228.42 431.98,-225.45 436,-222 473.41,-189.84 434.44,-148.99 472,-117 495.54,-96.95 531.17,-92.8 557.85,-93.02"/>
+<polygon fill="#010225" fill-opacity="0.019608" stroke="#010225" stroke-opacity="0.019608" points="557.86,-96.52 567.96,-93.31 558.06,-89.52 557.86,-96.52"/>
+</g>
+<!-- nf90_close -->
+<g id="proc~~popluc_init~~CallsGraph_node44" class="node">
+<title>nf90_close</title>
+<polygon fill="#777777" stroke="#777777" points="630,-66 560,-66 560,-42 630,-42 630,-66"/>
+<text text-anchor="middle" x="595" y="-51.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">nf90_close</text>
+</g>
+<!-- proc~read_luc_restart_nc&#45;&gt;nf90_close -->
+<g id="proc~~popluc_init~~CallsGraph_edge53" class="edge">
+<title>proc~read_luc_restart_nc&#45;&gt;nf90_close</title>
+<path fill="none" stroke="#010225" stroke-opacity="0.019608" d="M424.11,-230.94C428.37,-228.38 432.36,-225.42 436,-222 484.98,-175.89 422.81,-120.88 472,-75 492.51,-55.87 523.82,-50.79 549.59,-50.4"/>
+<polygon fill="#010225" fill-opacity="0.019608" stroke="#010225" stroke-opacity="0.019608" points="549.85,-53.9 559.88,-50.48 549.91,-46.9 549.85,-53.9"/>
+</g>
+<!-- nf90_get_var -->
+<g id="proc~~popluc_init~~CallsGraph_node45" class="node">
+<title>nf90_get_var</title>
+<polygon fill="#777777" stroke="#777777" points="636,-24 554,-24 554,0 636,0 636,-24"/>
+<text text-anchor="middle" x="595" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">nf90_get_var</text>
+</g>
+<!-- proc~read_luc_restart_nc&#45;&gt;nf90_get_var -->
+<g id="proc~~popluc_init~~CallsGraph_edge54" class="edge">
+<title>proc~read_luc_restart_nc&#45;&gt;nf90_get_var</title>
+<path fill="none" stroke="#010225" stroke-opacity="0.019608" d="M424.84,-230.84C428.85,-228.3 432.6,-225.37 436,-222 496.72,-161.79 411,-92.93 472,-33 490.58,-14.75 518.91,-9.07 543.59,-8.15"/>
+<polygon fill="#010225" fill-opacity="0.019608" stroke="#010225" stroke-opacity="0.019608" points="543.95,-11.65 553.91,-8.03 543.87,-4.65 543.95,-11.65"/>
+</g>
+<!-- nf90_inq_dimid -->
+<g id="proc~~popluc_init~~CallsGraph_node46" class="node">
+<title>nf90_inq_dimid</title>
+<polygon fill="#777777" stroke="#777777" points="642,-318 548,-318 548,-294 642,-294 642,-318"/>
+<text text-anchor="middle" x="595" y="-303.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">nf90_inq_dimid</text>
+</g>
+<!-- proc~read_luc_restart_nc&#45;&gt;nf90_inq_dimid -->
+<g id="proc~~popluc_init~~CallsGraph_edge55" class="edge">
+<title>proc~read_luc_restart_nc&#45;&gt;nf90_inq_dimid</title>
+<path fill="none" stroke="#010225" stroke-opacity="0.019608" d="M359.78,-255.05C390.21,-264.11 433.51,-276.38 472,-285 493.36,-289.79 517.03,-294.09 537.79,-297.53"/>
+<polygon fill="#010225" fill-opacity="0.019608" stroke="#010225" stroke-opacity="0.019608" points="537.3,-301 547.73,-299.15 538.42,-294.09 537.3,-301"/>
+</g>
+<!-- nf90_inq_varid -->
+<g id="proc~~popluc_init~~CallsGraph_node47" class="node">
+<title>nf90_inq_varid</title>
+<polygon fill="#777777" stroke="#777777" points="640.5,-276 549.5,-276 549.5,-252 640.5,-252 640.5,-276"/>
+<text text-anchor="middle" x="595" y="-261.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">nf90_inq_varid</text>
+</g>
+<!-- proc~read_luc_restart_nc&#45;&gt;nf90_inq_varid -->
+<g id="proc~~popluc_init~~CallsGraph_edge56" class="edge">
+<title>proc~read_luc_restart_nc&#45;&gt;nf90_inq_varid</title>
+<path fill="none" stroke="#010225" stroke-opacity="0.019608" d="M436.09,-251.88C471.83,-254.62 509.53,-257.51 539.14,-259.79"/>
+<polygon fill="#010225" fill-opacity="0.019608" stroke="#010225" stroke-opacity="0.019608" points="539.02,-263.29 549.25,-260.56 539.55,-256.31 539.02,-263.29"/>
+</g>
+<!-- nf90_inquire_dimension -->
+<g id="proc~~popluc_init~~CallsGraph_node48" class="node">
+<title>nf90_inquire_dimension</title>
+<polygon fill="#777777" stroke="#777777" points="664.5,-234 525.5,-234 525.5,-210 664.5,-210 664.5,-234"/>
+<text text-anchor="middle" x="595" y="-219.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">nf90_inquire_dimension</text>
+</g>
+<!-- proc~read_luc_restart_nc&#45;&gt;nf90_inquire_dimension -->
+<g id="proc~~popluc_init~~CallsGraph_edge57" class="edge">
+<title>proc~read_luc_restart_nc&#45;&gt;nf90_inquire_dimension</title>
+<path fill="none" stroke="#010225" stroke-opacity="0.019608" d="M436.09,-234.12C462.74,-232.08 490.5,-229.95 515.16,-228.05"/>
+<polygon fill="#010225" fill-opacity="0.019608" stroke="#010225" stroke-opacity="0.019608" points="515.47,-231.54 525.17,-227.28 514.93,-224.56 515.47,-231.54"/>
+</g>
+<!-- nf90_open -->
+<g id="proc~~popluc_init~~CallsGraph_node49" class="node">
+<title>nf90_open</title>
+<polygon fill="#777777" stroke="#777777" points="629.5,-192 560.5,-192 560.5,-168 629.5,-168 629.5,-192"/>
+<text text-anchor="middle" x="595" y="-177.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">nf90_open</text>
+</g>
+<!-- proc~read_luc_restart_nc&#45;&gt;nf90_open -->
+<g id="proc~~popluc_init~~CallsGraph_edge58" class="edge">
+<title>proc~read_luc_restart_nc&#45;&gt;nf90_open</title>
+<path fill="none" stroke="#010225" stroke-opacity="0.019608" d="M405.93,-230.95C416.21,-228.49 426.44,-225.53 436,-222 453.37,-215.58 454.6,-207.34 472,-201 497.07,-191.87 526.51,-186.66 550.19,-183.71"/>
+<polygon fill="#010225" fill-opacity="0.019608" stroke="#010225" stroke-opacity="0.019608" points="550.76,-187.17 560.29,-182.54 549.96,-180.21 550.76,-187.17"/>
+</g>
+<!-- proc~handle_err -->
+<g id="proc~~popluc_init~~CallsGraph_node52" class="node">
+<title>proc~handle_err</title>
+<g id="a_proc~~popluc_init~~CallsGraph_node52"><a xlink:href=".././proc/handle_err.html" xlink:title="casa_ncdf_module::HANDLE_ERR">
+<polygon fill="#d9534f" stroke="#d9534f" points="690,-150 500,-150 500,-126 690,-126 690,-150"/>
+<text text-anchor="middle" x="595" y="-135.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">casa_ncdf_module::HANDLE_ERR</text>
+</a>
+</g>
+</g>
+<!-- proc~read_luc_restart_nc&#45;&gt;proc~handle_err -->
+<g id="proc~~popluc_init~~CallsGraph_edge59" class="edge">
+<title>proc~read_luc_restart_nc&#45;&gt;proc~handle_err</title>
+<path fill="none" stroke="#010225" stroke-opacity="0.019608" d="M420.23,-230.93C425.78,-228.42 431.09,-225.47 436,-222 462.33,-203.37 445.59,-177.5 472,-159 477.68,-155.02 483.86,-151.72 490.33,-148.97"/>
+<polygon fill="#010225" fill-opacity="0.019608" stroke="#010225" stroke-opacity="0.019608" points="491.86,-152.13 499.99,-145.34 489.4,-145.58 491.86,-152.13"/>
+</g>
+<!-- nf90_strerror -->
+<g id="proc~~popluc_init~~CallsGraph_node59" class="node">
+<title>nf90_strerror</title>
+<polygon fill="#777777" stroke="#777777" points="879,-150 798,-150 798,-126 879,-126 879,-150"/>
+<text text-anchor="middle" x="838.5" y="-135.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">nf90_strerror</text>
+</g>
+<!-- proc~handle_err&#45;&gt;nf90_strerror -->
+<g id="proc~~popluc_init~~CallsGraph_edge60" class="edge">
+<title>proc~handle_err&#45;&gt;nf90_strerror</title>
+<path fill="none" stroke="#255022" stroke-opacity="0.027451" d="M690.06,-138C723.44,-138 759.69,-138 787.89,-138"/>
+<polygon fill="#255022" fill-opacity="0.027451" stroke="#255022" stroke-opacity="0.027451" points="787.89,-141.5 797.89,-138 787.89,-134.5 787.89,-141.5"/>
+</g>
+<!-- pop_grid -->
+<g id="proc~~popluc_init~~CallsGraph_node60" class="node">
+<title>pop_grid</title>
+<polygon fill="#777777" stroke="#777777" points="868,-444 809,-444 809,-420 868,-420 868,-444"/>
+<text text-anchor="middle" x="838.5" y="-429.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">pop_grid</text>
+</g>
+<!-- proc~initpop2d_poisson&#45;&gt;pop_grid -->
+<g id="proc~~popluc_init~~CallsGraph_edge61" class="edge">
+<title>proc~initpop2d_poisson&#45;&gt;pop_grid</title>
+<path fill="none" stroke="#255019" stroke-opacity="0.019608" d="M666.01,-402.01C683.02,-404.94 701.17,-408.07 718,-411 744.94,-415.68 775.28,-421.02 798.65,-425.14"/>
+<polygon fill="#255019" fill-opacity="0.019608" stroke="#255019" stroke-opacity="0.019608" points="798.07,-428.59 808.53,-426.88 799.29,-421.7 798.07,-428.59"/>
+</g>
+<!-- proc~cumexponential -->
+<g id="proc~~popluc_init~~CallsGraph_node61" class="node">
+<title>proc~cumexponential</title>
+<g id="a_proc~~popluc_init~~CallsGraph_node61"><a xlink:href=".././proc/cumexponential.html" xlink:title="POPModule::CumExponential">
+<polygon fill="#d94e8f" stroke="#d94e8f" points="922,-360 755,-360 755,-336 922,-336 922,-360"/>
+<text text-anchor="middle" x="838.5" y="-345.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">POPModule::CumExponential</text>
+</a>
+</g>
+</g>
+<!-- proc~initpop2d_poisson&#45;&gt;proc~cumexponential -->
+<g id="proc~~popluc_init~~CallsGraph_edge62" class="edge">
+<title>proc~initpop2d_poisson&#45;&gt;proc~cumexponential</title>
+<path fill="none" stroke="#255019" stroke-opacity="0.019608" d="M666.01,-377.99C683.02,-375.06 701.17,-371.93 718,-369 731.36,-366.68 745.56,-364.19 759.33,-361.78"/>
+<polygon fill="#255019" fill-opacity="0.019608" stroke="#255019" stroke-opacity="0.019608" points="760.01,-365.21 769.26,-360.03 758.8,-358.32 760.01,-365.21"/>
+</g>
+<!-- proc~exponential -->
+<g id="proc~~popluc_init~~CallsGraph_node62" class="node">
+<title>proc~exponential</title>
+<g id="a_proc~~popluc_init~~CallsGraph_node62"><a xlink:href=".././proc/exponential.html" xlink:title="POPModule::Exponential">
+<polygon fill="#d94e8f" stroke="#d94e8f" points="909.5,-402 767.5,-402 767.5,-378 909.5,-378 909.5,-402"/>
+<text text-anchor="middle" x="838.5" y="-387.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">POPModule::Exponential</text>
+</a>
+</g>
+</g>
+<!-- proc~initpop2d_poisson&#45;&gt;proc~exponential -->
+<g id="proc~~popluc_init~~CallsGraph_edge63" class="edge">
+<title>proc~initpop2d_poisson&#45;&gt;proc~exponential</title>
+<path fill="none" stroke="#255019" stroke-opacity="0.019608" d="M683.19,-390C707.42,-390 733.62,-390 757.42,-390"/>
+<polygon fill="#255019" fill-opacity="0.019608" stroke="#255019" stroke-opacity="0.019608" points="757.47,-393.5 767.47,-390 757.47,-386.5 757.47,-393.5"/>
+</g>
+<!-- proc~layer_recruitment_single_patch&#45;&gt;pop_grid -->
+<g id="proc~~popluc_init~~CallsGraph_edge64" class="edge">
+<title>proc~layer_recruitment_single_patch&#45;&gt;pop_grid</title>
+<path fill="none" stroke="#255016" stroke-opacity="0.007843" d="M718.17,-432C747.32,-432 776.37,-432 798.5,-432"/>
+<polygon fill="#255016" fill-opacity="0.007843" stroke="#255016" stroke-opacity="0.007843" points="798.79,-435.5 808.78,-432 798.78,-428.5 798.79,-435.5"/>
+</g>
+<!-- proc~get_allometry -->
+<g id="proc~~popluc_init~~CallsGraph_node63" class="node">
+<title>proc~get_allometry</title>
+<g id="a_proc~~popluc_init~~CallsGraph_node63"><a xlink:href=".././proc/get_allometry.html" xlink:title="POPModule::GET_ALLOMETRY">
+<polygon fill="#d9534f" stroke="#d9534f" points="923,-486 754,-486 754,-462 923,-462 923,-486"/>
+<text text-anchor="middle" x="838.5" y="-471.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">POPModule::GET_ALLOMETRY</text>
+</a>
+</g>
+</g>
+<!-- proc~layer_recruitment_single_patch&#45;&gt;proc~get_allometry -->
+<g id="proc~~popluc_init~~CallsGraph_edge65" class="edge">
+<title>proc~layer_recruitment_single_patch&#45;&gt;proc~get_allometry</title>
+<path fill="none" stroke="#255016" stroke-opacity="0.007843" d="M666.01,-444.01C683.02,-446.94 701.17,-450.07 718,-453 731.36,-455.32 745.56,-457.81 759.33,-460.22"/>
+<polygon fill="#255016" fill-opacity="0.007843" stroke="#255016" stroke-opacity="0.007843" points="758.8,-463.68 769.26,-461.97 760.01,-456.79 758.8,-463.68"/>
+</g>
+<!-- proc~allometry -->
+<g id="proc~~popluc_init~~CallsGraph_node64" class="node">
+<title>proc~allometry</title>
+<g id="a_proc~~popluc_init~~CallsGraph_node64"><a xlink:href=".././proc/allometry.html" xlink:title="POPModule::Allometry">
+<polygon fill="#d9534f" stroke="#d9534f" points="1115,-528 984,-528 984,-504 1115,-504 1115,-528"/>
+<text text-anchor="middle" x="1049.5" y="-513.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">POPModule::Allometry</text>
+</a>
+</g>
+</g>
+<!-- proc~get_allometry&#45;&gt;proc~allometry -->
+<g id="proc~~popluc_init~~CallsGraph_edge66" class="edge">
+<title>proc~get_allometry&#45;&gt;proc~allometry</title>
+<path fill="none" stroke="#204025" stroke-opacity="0.019608" d="M899.39,-486.04C924.1,-491 952.9,-496.79 978.56,-501.95"/>
+<polygon fill="#204025" fill-opacity="0.019608" stroke="#204025" stroke-opacity="0.019608" points="978.11,-505.42 988.6,-503.96 979.49,-498.56 978.11,-505.42"/>
+</g>
+<!-- proc~getheight -->
+<g id="proc~~popluc_init~~CallsGraph_node65" class="node">
+<title>proc~getheight</title>
+<g id="a_proc~~popluc_init~~CallsGraph_node65"><a xlink:href=".././proc/getheight.html" xlink:title="POPModule::GetHeight">
+<polygon fill="#d94e8f" stroke="#d94e8f" points="1116,-486 983,-486 983,-462 1116,-462 1116,-486"/>
+<text text-anchor="middle" x="1049.5" y="-471.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">POPModule::GetHeight</text>
+</a>
+</g>
+</g>
+<!-- proc~get_allometry&#45;&gt;proc~getheight -->
+<g id="proc~~popluc_init~~CallsGraph_edge67" class="edge">
+<title>proc~get_allometry&#45;&gt;proc~getheight</title>
+<path fill="none" stroke="#204025" stroke-opacity="0.019608" d="M923,-474C939.33,-474 956.36,-474 972.43,-474"/>
+<polygon fill="#204025" fill-opacity="0.019608" stroke="#204025" stroke-opacity="0.019608" points="972.83,-477.5 982.83,-474 972.83,-470.5 972.83,-477.5"/>
+</g>
+<!-- proc~williams_allometry -->
+<g id="proc~~popluc_init~~CallsGraph_node66" class="node">
+<title>proc~williams_allometry</title>
+<g id="a_proc~~popluc_init~~CallsGraph_node66"><a xlink:href=".././proc/williams_allometry.html" xlink:title="POPModule::Williams_Allometry">
+<polygon fill="#d9534f" stroke="#d9534f" points="1140,-444 959,-444 959,-420 1140,-420 1140,-444"/>
+<text text-anchor="middle" x="1049.5" y="-429.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">POPModule::Williams_Allometry</text>
+</a>
+</g>
+</g>
+<!-- proc~get_allometry&#45;&gt;proc~williams_allometry -->
+<g id="proc~~popluc_init~~CallsGraph_edge68" class="edge">
+<title>proc~get_allometry&#45;&gt;proc~williams_allometry</title>
+<path fill="none" stroke="#204025" stroke-opacity="0.019608" d="M899.39,-461.96C924.1,-457 952.9,-451.21 978.56,-446.05"/>
+<polygon fill="#204025" fill-opacity="0.019608" stroke="#204025" stroke-opacity="0.019608" points="979.49,-449.44 988.6,-444.04 978.11,-442.58 979.49,-449.44"/>
+</g>
+</g>
+</svg>
+</div>                <script>
+                  var panprocpopluc_initCallsGraph = svgPanZoom('#procpopluc_initCallsGraph',
+                    {zoomEnabled: true, controlIconsEnabled: true, fit: true, center: true,}
+                  );
+                </script>        <div><a type="button" class="graph-help" data-toggle="modal" href="#graph-help-text">Help</a></div>
+          <div class="modal fade" id="graph-help-text" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                  <h4 class="modal-title" id="-graph-help-label">Graph Key</h4>
+                </div>
+              <div class="modal-body">
+<p>Nodes of different colours represent the following: </p>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.43.0 (0)
+ -->
+<!-- Title: Graph Key Pages: 1 -->
+<svg width="597pt" height="32pt"
+ viewBox="0.00 0.00 596.50 32.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 28)">
+<title>Graph Key</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-28 592.5,-28 592.5,4 -4,4"/>
+<!-- Subroutine -->
+<g id="node1" class="node">
+<title>Subroutine</title>
+<polygon fill="#d9534f" stroke="#d9534f" points="70,-24 0,-24 0,0 70,0 70,-24"/>
+<text text-anchor="middle" x="35" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Subroutine</text>
+</g>
+<!-- Function -->
+<g id="node2" class="node">
+<title>Function</title>
+<polygon fill="#d94e8f" stroke="#d94e8f" points="146,-24 88,-24 88,0 146,0 146,-24"/>
+<text text-anchor="middle" x="117" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Function</text>
+</g>
+<!-- Interface -->
+<g id="node3" class="node">
+<title>Interface</title>
+<polygon fill="#a7506f" stroke="#a7506f" points="225.5,-24 164.5,-24 164.5,0 225.5,0 225.5,-24"/>
+<text text-anchor="middle" x="195" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Interface</text>
+</g>
+<!-- Unknown Procedure Type -->
+<g id="node4" class="node">
+<title>Unknown Procedure Type</title>
+<polygon fill="#777777" stroke="#777777" points="388.5,-24 243.5,-24 243.5,0 388.5,0 388.5,-24"/>
+<text text-anchor="middle" x="316" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Unknown Procedure Type</text>
+</g>
+<!-- Program -->
+<g id="node5" class="node">
+<title>Program</title>
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="465,-24 407,-24 407,0 465,0 465,-24"/>
+<text text-anchor="middle" x="436" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Program</text>
+</g>
+<!-- This Page&#39;s Entity -->
+<g id="node6" class="node">
+<title>This Page&#39;s Entity</title>
+<polygon fill="none" stroke="black" points="588.5,-24 483.5,-24 483.5,0 588.5,0 588.5,-24"/>
+<text text-anchor="middle" x="536" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50">This Page&#39;s Entity</text>
+</g>
+</g>
+</svg>
+
+<p>Solid arrows point from a procedure to one which it calls. Dashed 
+arrows point from an interface to procedures which implement that interface.
+This could include the module procedures in a generic interface or the
+implementation in a submodule of an interface in a parent module.
+</p>
+ Where possible, edges connecting nodes are
+given different colours to make them easier to distinguish in
+large graphs.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+  <h3 class="panel-title">Called by</h3>
+      </div>
+      <div class="panel-body">
+  <div class="depgraph"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.43.0 (0)
+ -->
+<!-- Title: proc~~popluc_init~~CalledByGraph Pages: 1 -->
+<svg id="procpopluc_initCalledByGraph" width="641pt" height="62pt"
+ viewBox="0.00 0.00 641.00 62.09" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="proc~~popluc_init~~CalledByGraph" class="graph" transform="scale(1.19 1.19) rotate(0) translate(4 70)">
+<title>proc~~popluc_init~~CalledByGraph</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-70 760,-70 760,4 -4,4"/>
+<!-- proc~popluc_init -->
+<g id="proc~~popluc_init~~CalledByGraph_node1" class="node">
+<title>proc~popluc_init</title>
+<polygon fill="none" stroke="black" points="756,-45 589,-45 589,-21 756,-21 756,-45"/>
+<text text-anchor="middle" x="672.5" y="-30.6" font-family="Helvetica,sans-Serif" font-size="10.50">POPLUC_Module::POPLUC_Init</text>
+</g>
+<!-- proc~load_parameters -->
+<g id="proc~~popluc_init~~CalledByGraph_node2" class="node">
+<title>proc~load_parameters</title>
+<g id="a_proc~~popluc_init~~CalledByGraph_node2"><a xlink:href=".././proc/load_parameters.html" xlink:title="cable_input_module::load_parameters">
+<polygon fill="#d9534f" stroke="#d9534f" points="553,-45 335,-45 335,-21 553,-21 553,-45"/>
+<text text-anchor="middle" x="444" y="-30.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">cable_input_module::load_parameters</text>
+</a>
+</g>
+</g>
+<!-- proc~load_parameters&#45;&gt;proc~popluc_init -->
+<g id="proc~~popluc_init~~CalledByGraph_edge1" class="edge">
+<title>proc~load_parameters&#45;&gt;proc~popluc_init</title>
+<path fill="none" stroke="#255000" d="M553.27,-33C561.76,-33 570.29,-33 578.67,-33"/>
+<polygon fill="#255000" stroke="#255000" points="578.79,-36.5 588.79,-33 578.79,-29.5 578.79,-36.5"/>
+</g>
+<!-- proc~mpidrv_master -->
+<g id="proc~~popluc_init~~CalledByGraph_node3" class="node">
+<title>proc~mpidrv_master</title>
+<g id="a_proc~~popluc_init~~CalledByGraph_node3"><a xlink:href=".././proc/mpidrv_master.html" xlink:title="cable_mpimaster::mpidrv_master">
+<polygon fill="#d9534f" stroke="#d9534f" points="299,-66 106,-66 106,-42 299,-42 299,-66"/>
+<text text-anchor="middle" x="202.5" y="-51.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">cable_mpimaster::mpidrv_master</text>
+</a>
+</g>
+</g>
+<!-- proc~mpidrv_master&#45;&gt;proc~load_parameters -->
+<g id="proc~~popluc_init~~CalledByGraph_edge2" class="edge">
+<title>proc~mpidrv_master&#45;&gt;proc~load_parameters</title>
+<path fill="none" stroke="#255000" d="M299.19,-45.61C307.62,-44.87 316.21,-44.12 324.8,-43.36"/>
+<polygon fill="#255000" stroke="#255000" points="325.2,-46.84 334.86,-42.48 324.59,-39.87 325.2,-46.84"/>
+</g>
+<!-- program~cable_offline_driver -->
+<g id="proc~~popluc_init~~CalledByGraph_node4" class="node">
+<title>program~cable_offline_driver</title>
+<g id="a_proc~~popluc_init~~CalledByGraph_node4"><a xlink:href=".././program/cable_offline_driver.html" xlink:title="cable_offline_driver">
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="261.5,-24 143.5,-24 143.5,0 261.5,0 261.5,-24"/>
+<text text-anchor="middle" x="202.5" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">cable_offline_driver</text>
+</a>
+</g>
+</g>
+<!-- program~cable_offline_driver&#45;&gt;proc~load_parameters -->
+<g id="proc~~popluc_init~~CalledByGraph_edge3" class="edge">
+<title>program~cable_offline_driver&#45;&gt;proc~load_parameters</title>
+<path fill="none" stroke="#255000" d="M261.78,-17.11C280.87,-18.78 302.82,-20.71 324.71,-22.63"/>
+<polygon fill="#255000" stroke="#255000" points="324.48,-26.12 334.75,-23.51 325.1,-19.15 324.48,-26.12"/>
+</g>
+<!-- program~mpi_driver -->
+<g id="proc~~popluc_init~~CalledByGraph_node5" class="node">
+<title>program~mpi_driver</title>
+<g id="a_proc~~popluc_init~~CalledByGraph_node5"><a xlink:href=".././program/mpi_driver.html" xlink:title="mpi_driver">
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="70,-66 0,-66 0,-42 70,-42 70,-66"/>
+<text text-anchor="middle" x="35" y="-51.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">mpi_driver</text>
+</a>
+</g>
+</g>
+<!-- program~mpi_driver&#45;&gt;proc~mpidrv_master -->
+<g id="proc~~popluc_init~~CalledByGraph_edge4" class="edge">
+<title>program~mpi_driver&#45;&gt;proc~mpidrv_master</title>
+<path fill="none" stroke="#255000" d="M70.29,-54C78,-54 86.57,-54 95.53,-54"/>
+<polygon fill="#255000" stroke="#255000" points="95.8,-57.5 105.8,-54 95.8,-50.5 95.8,-57.5"/>
+</g>
+</g>
+</svg>
+</div>                <script>
+                  var panprocpopluc_initCalledByGraph = svgPanZoom('#procpopluc_initCalledByGraph',
+                    {zoomEnabled: true, controlIconsEnabled: true, fit: true, center: true,}
+                  );
+                </script>        <div><a type="button" class="graph-help" data-toggle="modal" href="#graph-help-text">Help</a></div>
+          <div class="modal fade" id="graph-help-text" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                  <h4 class="modal-title" id="-graph-help-label">Graph Key</h4>
+                </div>
+              <div class="modal-body">
+<p>Nodes of different colours represent the following: </p>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.43.0 (0)
+ -->
+<!-- Title: Graph Key Pages: 1 -->
+<svg width="597pt" height="32pt"
+ viewBox="0.00 0.00 596.50 32.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 28)">
+<title>Graph Key</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-28 592.5,-28 592.5,4 -4,4"/>
+<!-- Subroutine -->
+<g id="node1" class="node">
+<title>Subroutine</title>
+<polygon fill="#d9534f" stroke="#d9534f" points="70,-24 0,-24 0,0 70,0 70,-24"/>
+<text text-anchor="middle" x="35" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Subroutine</text>
+</g>
+<!-- Function -->
+<g id="node2" class="node">
+<title>Function</title>
+<polygon fill="#d94e8f" stroke="#d94e8f" points="146,-24 88,-24 88,0 146,0 146,-24"/>
+<text text-anchor="middle" x="117" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Function</text>
+</g>
+<!-- Interface -->
+<g id="node3" class="node">
+<title>Interface</title>
+<polygon fill="#a7506f" stroke="#a7506f" points="225.5,-24 164.5,-24 164.5,0 225.5,0 225.5,-24"/>
+<text text-anchor="middle" x="195" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Interface</text>
+</g>
+<!-- Unknown Procedure Type -->
+<g id="node4" class="node">
+<title>Unknown Procedure Type</title>
+<polygon fill="#777777" stroke="#777777" points="388.5,-24 243.5,-24 243.5,0 388.5,0 388.5,-24"/>
+<text text-anchor="middle" x="316" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Unknown Procedure Type</text>
+</g>
+<!-- Program -->
+<g id="node5" class="node">
+<title>Program</title>
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="465,-24 407,-24 407,0 465,0 465,-24"/>
+<text text-anchor="middle" x="436" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Program</text>
+</g>
+<!-- This Page&#39;s Entity -->
+<g id="node6" class="node">
+<title>This Page&#39;s Entity</title>
+<polygon fill="none" stroke="black" points="588.5,-24 483.5,-24 483.5,0 588.5,0 588.5,-24"/>
+<text text-anchor="middle" x="536" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50">This Page&#39;s Entity</text>
+</g>
+</g>
+</svg>
+
+<p>Solid arrows point from a procedure to one which it calls. Dashed 
+arrows point from an interface to procedures which implement that interface.
+This could include the module procedures in a generic interface or the
+implementation in a submodule of an interface in a parent module.
+</p>
+ Where possible, edges connecting nodes are
+given different colours to make them easier to distinguish in
+large graphs.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <section class="visible-xs visible-sm hidden-md">
+        <h3>Contents</h3>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+    </section>
+    <br class="visible-xs visible-sm hidden-md">
+
+
+    
+    
+
+    
+    
+
+
+    
+    
+    </div>
+  </div>
+
+      <hr>
+    </div> <!-- /container -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-6 col-md-6"><p>CABLE was developed by CABLE community<br>&copy; 2023 
+</p>
+          </div>
+          <div class="col-xs-6 col-md-6">
+            <p class="text-right">
+              Documentation generated by
+              <a href="https://github.com/Fortran-FOSS-Programmers/ford">FORD</a>
+            </p>
+          </div>
+        </div>
+        <br>
+      </div> <!-- /container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+         ================================================== -->
+         <!-- Placed at the end of the document so the pages load faster -->
+    <!--
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        -->
+        <script src="../js/bootstrap.min.js"></script>
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <script src="../js/ie10-viewport-bug-workaround.js"></script>
+
+        <!-- MathJax JavaScript
+             ================================================== -->
+             <!-- Placed at the end of the document so the pages load faster -->
+        <script type="text/x-mathjax-config">
+          MathJax.Hub.Config({
+          TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } },
+          jax: ['input/TeX','input/MathML','output/HTML-CSS'],
+          extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']
+          });
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+          <script src="../tipuesearch/tipuesearch_content.js"></script>
+          <script src="../tipuesearch/tipuesearch_set.js"></script>
+          <script src="../tipuesearch/tipuesearch.js"></script>
+
+  </body>
+</html>
