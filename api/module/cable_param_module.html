@@ -1,0 +1,3001 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="Documentation for CABLE">
+    <meta name="author" content="CABLE community" >
+    <link rel="icon" href="../favicon.png">
+
+    <title>cable_param_module &ndash; CABLE</title>
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/pygments.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/local.css" rel="stylesheet">
+      <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+         <script src="../js/jquery-2.1.3.min.js"></script>
+         <script src="../js/svg-pan-zoom.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html">CABLE </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown hidden-xs visible-sm visible-md hidden-lg">
+              <a href="#" class="dropdown-toggle"
+                 data-toggle="dropdown" role="button"
+                 aria-haspopup="true"
+                 aria-expanded="false">
+                 Contents <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                    <li><a href="../lists/files.html">Source Files</a></li>
+                  <li><a href="../lists/modules.html">Modules</a></li>
+                  <li><a href="../lists/procedures.html">Procedures</a></li>
+                  <li><a href="../lists/types.html">Derived Types</a></li>
+                  <li><a href="../lists/programs.html">Programs</a></li>
+              </ul>
+            </li>
+                <li class="visible-xs hidden-sm visible-lg">
+                  <a href="../lists/files.html">Source Files</a>
+                </li>
+              <li class="visible-xs hidden-sm visible-lg">
+                <a href="../lists/modules.html">Modules</a>
+              </li>
+              <li class="visible-xs hidden-sm visible-lg">
+                <a href="../lists/procedures.html">Procedures</a>
+              </li>
+              <li class="visible-xs hidden-sm visible-lg">
+                <a href="../lists/types.html">Derived Types</a>
+              </li>
+              <li class="visible-xs hidden-sm visible-lg">
+                <a href="../lists/programs.html">Programs</a>
+              </li>
+          </ul>
+            <form action="../search.html" class="navbar-form navbar-right" role="search">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search" name="q" id="tipue_search_input" autocomplete="off" required>
+              </div>
+              <!--
+                  <button type="submit" class="btn btn-default">Submit</button>
+                  -->
+            </form>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+  <div class="row">
+    <h1>cable_param_module
+      <small>Module</small>
+      
+    </h1>
+      <div class="row" id="info-bar">
+    <div class="col-lg-12">
+      <div class="well well-sm">
+        <ul class="list-inline" style="margin-bottom:0px;display:inline">
+
+          <li id="statements"><i class="fa fa-list-ol"></i>
+            <a data-toggle="tooltip"
+               data-placement="bottom" data-html="true"
+               title=" 3.4% of total for modules and submodules.">1471 statements</a>
+          </li>
+
+            <li id="source-file">
+              <i class="fa fa-code"></i>
+              <a href="../src/cable_parameters.F90"> Source File</a>
+            </li>
+        </ul>
+        <ol class="breadcrumb in-well text-right">
+              <li><a href='../sourcefile/cable_parameters.f90.html'>cable_parameters.F90</a></li>
+          <li class="active">cable_param_module</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <script>
+    $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+    })
+  </script>
+
+  </div>
+
+  <div class="row">
+    <div class="col-md-3 hidden-xs hidden-sm visible-md visible-lg">
+        <div id="sidebar">
+      <h3>Contents</h3>
+  
+      <div class="panel panel-primary">
+      <div class="panel-heading text-left">
+        <h3 class="panel-title">
+          <a data-toggle="collapse" href="#vars-0">Variables</a>
+        </h3>
+      </div>
+      <div id="vars-0" class="panel-collapse collapse">
+        <div class="list-group">
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-patches_in_parfile">patches_in_parfile</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-classification">classification</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-inveg~2">inVeg</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-inpfrac~2">inPFrac</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-insoil">inSoil</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-inwb">inWB</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-intgg">inTGG</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-inlon">inLon</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-inlat">inLat</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-inalb">inALB</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-insnd">inSND</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-inlai">inLAI</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-inarea">inArea</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-insorder">inSorder</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-inndep">inNdep</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-innfix">inNfix</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-inpwea">inPwea</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-inpdust">inPdust</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-inswilt">inswilt</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-insfc">insfc</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-inssat">inssat</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-inbch">inbch</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-inhyds">inhyds</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-insucs">insucs</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-inrhosoil">inrhosoil</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-incss">incss</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-incnsd">incnsd</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-inclay">inclay</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-insilt">insilt</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-insand">insand</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-found_explicit_gw_parameters">found_explicit_gw_parameters</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-ingwbch">inGWbch</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-ingwssat">inGWssat</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-ingwhyds">inGWhyds</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-ingwsucs">inGWsucs</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-ingwrhosoil">inGWrhosoil</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-ingwclay">inGWclay</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-ingwsilt">inGWsilt</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-ingwsand">inGWsand</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-ingwwatr">inGWWatr</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-inwatr">inWatr</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-inslope">inSlope</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-ingwdz">inGWdz</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-inslopestd">inSlopeSTD</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-inorg">inORG</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-insoilcolor">inSoilColor</a>
+        </div>
+      </div>
+    </div>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      <div class="panel panel-primary">
+      <div class="panel-heading text-left">
+        <h3 class="panel-title">
+          <a data-toggle="collapse" href="#subs-0">Subroutines</a>
+        </h3>
+      </div>
+      <div id="subs-0" class="panel-collapse collapse">
+        <div class="list-group">
+            <a class="list-group-item" href="../module/cable_param_module.html#proc-get_default_params">get_default_params</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#proc-read_gridinfo">read_gridinfo</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#proc-spatialsoil">spatialSoil</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#proc-read_soilcolor">read_soilcolor</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#proc-nsflip">NSflip</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#proc-get_land_index">get_land_index</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#proc-countpatch">countPatch</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#proc-write_default_params">write_default_params</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#proc-write_cnp_params">write_cnp_params</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#proc-derived_parameters">derived_parameters</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#proc-check_parameter_values">check_parameter_values</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#proc-report_parameters">report_parameters</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#proc-init_veg_from_vegin">init_veg_from_vegin</a>
+        </div>
+      </div>
+    </div>
+
+  
+  
+  
+  
+  
+  
+
+
+  </div>
+
+    </div>
+
+    <div class="col-md-9" id='text'>
+      
+<br>          <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Uses</h3>
+      </div>
+      <ul class="list-group">
+          <li class="list-group-item">
+            <ul class="list-inline">
+                <li><a href='../module/cable_soil_params_mod.html'>cable_soil_params_mod</a></li>
+                <li><a href='../module/cable_pft_params_mod.html'>cable_pft_params_mod</a></li>
+                <li><a href='../module/phenvariable.html'>phenvariable</a></li>
+                <li><a href='../module/cable_luc_expt.html'>CABLE_LUC_EXPT</a></li>
+                <li><a href='../module/cable_def_types_mod.html'>cable_def_types_mod</a></li>
+                <li><a href='../module/casadimension.html'>casadimension</a></li>
+                <li><a href='../module/cable_abort_module.html'>cable_abort_module</a></li>
+                <li><a href='../module/cable_common_module.html'>cable_common_module</a></li>
+                <li><a href='../module/casavariable.html'>casavariable</a></li>
+                <li><a href='../module/cable_io_vars_module.html'>cable_IO_vars_module</a></li>
+            </ul>
+          </li>
+          <li class="list-group-item">
+            <div class="depgraph"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.43.0 (0)
+ -->
+<!-- Title: module~~cable_param_module~~UsesGraph Pages: 1 -->
+<svg id="modulecable_param_moduleUsesGraph" width="641pt" height="327pt"
+ viewBox="0.00 0.00 641.00 327.20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="module~~cable_param_module~~UsesGraph" class="graph" transform="scale(1.05 1.05) rotate(0) translate(4 338)">
+<title>module~~cable_param_module~~UsesGraph</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-338 666,-338 666,4 -4,4"/>
+<!-- module~cable_param_module -->
+<g id="module~~cable_param_module~~UsesGraph_node1" class="node">
+<title>module~cable_param_module</title>
+<polygon fill="none" stroke="black" points="662,-170 534,-170 534,-146 662,-146 662,-170"/>
+<text text-anchor="middle" x="598" y="-155.6" font-family="Helvetica,sans-Serif" font-size="10.50">cable_param_module</text>
+</g>
+<!-- module~cable_abort_module -->
+<g id="module~~cable_param_module~~UsesGraph_node2" class="node">
+<title>module~cable_abort_module</title>
+<g id="a_module~~cable_param_module~~UsesGraph_node2"><a xlink:href=".././module/cable_abort_module.html" xlink:title="cable_abort_module">
+<polygon fill="#337ab7" stroke="#337ab7" points="488.5,-334 367.5,-334 367.5,-310 488.5,-310 488.5,-334"/>
+<text text-anchor="middle" x="428" y="-319.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">cable_abort_module</text>
+</a>
+</g>
+</g>
+<!-- module~cable_param_module&#45;&gt;module~cable_abort_module -->
+<g id="module~~cable_param_module~~UsesGraph_edge1" class="edge">
+<title>module~cable_param_module&#45;&gt;module~cable_abort_module</title>
+<path fill="none" stroke="#255000" stroke-dasharray="5,2" d="M591.39,-170.17C578.55,-196.71 544.55,-260.28 498,-296 493.25,-299.64 487.93,-302.82 482.41,-305.59"/>
+<polygon fill="#255000" stroke="#255000" points="480.66,-302.54 473,-309.86 483.55,-308.91 480.66,-302.54"/>
+</g>
+<!-- module~cable_common_module -->
+<g id="module~~cable_param_module~~UsesGraph_node3" class="node">
+<title>module~cable_common_module</title>
+<g id="a_module~~cable_param_module~~UsesGraph_node3"><a xlink:href=".././module/cable_common_module.html" xlink:title="cable_common_module">
+<polygon fill="#337ab7" stroke="#337ab7" points="322,-334 182,-334 182,-310 322,-310 322,-334"/>
+<text text-anchor="middle" x="252" y="-319.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">cable_common_module</text>
+</a>
+</g>
+</g>
+<!-- module~cable_param_module&#45;&gt;module~cable_common_module -->
+<g id="module~~cable_param_module~~UsesGraph_edge2" class="edge">
+<title>module~cable_param_module&#45;&gt;module~cable_common_module</title>
+<path fill="none" stroke="#255000" stroke-dasharray="5,2" d="M427,-282C408.16,-289.34 363.35,-299.59 323.91,-307.87"/>
+<polygon fill="#255000" stroke="#255000" points="323.1,-304.47 314.02,-309.93 324.53,-311.32 323.1,-304.47"/>
+</g>
+<!-- module~cable_def_types_mod -->
+<g id="module~~cable_param_module~~UsesGraph_node4" class="node">
+<title>module~cable_def_types_mod</title>
+<g id="a_module~~cable_param_module~~UsesGraph_node4"><a xlink:href=".././module/cable_def_types_mod.html" xlink:title="cable_def_types_mod">
+<polygon fill="#337ab7" stroke="#337ab7" points="136.5,-170 9.5,-170 9.5,-146 136.5,-146 136.5,-170"/>
+<text text-anchor="middle" x="73" y="-155.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">cable_def_types_mod</text>
+</a>
+</g>
+</g>
+<!-- module~cable_param_module&#45;&gt;module~cable_def_types_mod -->
+<g id="module~~cable_param_module~~UsesGraph_edge3" class="edge">
+<title>module~cable_param_module&#45;&gt;module~cable_def_types_mod</title>
+<path fill="none" stroke="#255000" stroke-dasharray="5,2" d="M586.48,-170.22C569.45,-189.41 534.1,-226.92 498,-251 470.03,-269.65 460.32,-269.79 429,-282"/>
+<path fill="none" stroke="#255000" stroke-dasharray="5,2" d="M427,-282C354.95,-310.09 328.3,-299.6 253,-282"/>
+</g>
+<!-- module~cable_io_vars_module -->
+<g id="module~~cable_param_module~~UsesGraph_node5" class="node">
+<title>module~cable_io_vars_module</title>
+<g id="a_module~~cable_param_module~~UsesGraph_node5"><a xlink:href=".././module/cable_io_vars_module.html" xlink:title="cable_IO_vars_module">
+<polygon fill="#337ab7" stroke="#337ab7" points="318,-170 186,-170 186,-146 318,-146 318,-170"/>
+<text text-anchor="middle" x="252" y="-155.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">cable_IO_vars_module</text>
+</a>
+</g>
+</g>
+<!-- module~cable_param_module&#45;&gt;module~cable_io_vars_module -->
+<g id="module~~cable_param_module~~UsesGraph_edge4" class="edge">
+<title>module~cable_param_module&#45;&gt;module~cable_io_vars_module</title>
+<path fill="none" stroke="#255000" stroke-dasharray="5,2" d="M427,-178C394.54,-176.18 358.85,-172.4 328.28,-168.6"/>
+<polygon fill="#255000" stroke="#255000" points="328.48,-165.1 318.12,-167.32 327.6,-172.04 328.48,-165.1"/>
+</g>
+<!-- module~cable_luc_expt -->
+<g id="module~~cable_param_module~~UsesGraph_node6" class="node">
+<title>module~cable_luc_expt</title>
+<g id="a_module~~cable_param_module~~UsesGraph_node6"><a xlink:href=".././module/cable_luc_expt.html" xlink:title="CABLE_LUC_EXPT">
+<polygon fill="#337ab7" stroke="#337ab7" points="481,-242 375,-242 375,-218 481,-218 481,-242"/>
+<text text-anchor="middle" x="428" y="-227.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">CABLE_LUC_EXPT</text>
+</a>
+</g>
+</g>
+<!-- module~cable_param_module&#45;&gt;module~cable_luc_expt -->
+<g id="module~~cable_param_module~~UsesGraph_edge5" class="edge">
+<title>module~cable_param_module&#45;&gt;module~cable_luc_expt</title>
+<path fill="none" stroke="#255000" stroke-dasharray="5,2" d="M568.88,-170.05C540.9,-182.04 497.77,-200.53 466.8,-213.8"/>
+<polygon fill="#255000" stroke="#255000" points="465.02,-210.75 457.21,-217.91 467.78,-217.19 465.02,-210.75"/>
+</g>
+<!-- module~cable_pft_params_mod -->
+<g id="module~~cable_param_module~~UsesGraph_node7" class="node">
+<title>module~cable_pft_params_mod</title>
+<g id="a_module~~cable_param_module~~UsesGraph_node7"><a xlink:href=".././module/cable_pft_params_mod.html" xlink:title="cable_pft_params_mod">
+<polygon fill="#337ab7" stroke="#337ab7" points="496,-66 360,-66 360,-42 496,-42 496,-66"/>
+<text text-anchor="middle" x="428" y="-51.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">cable_pft_params_mod</text>
+</a>
+</g>
+</g>
+<!-- module~cable_param_module&#45;&gt;module~cable_pft_params_mod -->
+<g id="module~~cable_param_module~~UsesGraph_edge6" class="edge">
+<title>module~cable_param_module&#45;&gt;module~cable_pft_params_mod</title>
+<path fill="none" stroke="#255000" stroke-dasharray="5,2" d="M585.68,-145.78C568.4,-127.82 533.69,-94.34 498,-75 494.51,-73.11 490.82,-71.36 487.04,-69.76"/>
+<polygon fill="#255000" stroke="#255000" points="488.11,-66.41 477.52,-66.05 485.57,-72.94 488.11,-66.41"/>
+</g>
+<!-- module~cable_soil_params_mod -->
+<g id="module~~cable_param_module~~UsesGraph_node8" class="node">
+<title>module~cable_soil_params_mod</title>
+<g id="a_module~~cable_param_module~~UsesGraph_node8"><a xlink:href=".././module/cable_soil_params_mod.html" xlink:title="cable_soil_params_mod">
+<polygon fill="#337ab7" stroke="#337ab7" points="498,-24 358,-24 358,0 498,0 498,-24"/>
+<text text-anchor="middle" x="428" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">cable_soil_params_mod</text>
+</a>
+</g>
+</g>
+<!-- module~cable_param_module&#45;&gt;module~cable_soil_params_mod -->
+<g id="module~~cable_param_module~~UsesGraph_edge7" class="edge">
+<title>module~cable_param_module&#45;&gt;module~cable_soil_params_mod</title>
+<path fill="none" stroke="#255000" stroke-dasharray="5,2" d="M590.62,-145.65C577.05,-120.6 542.84,-63.56 498,-33 495.57,-31.35 493.02,-29.82 490.37,-28.41"/>
+<polygon fill="#255000" stroke="#255000" points="491.62,-25.14 481.08,-24.06 488.65,-31.47 491.62,-25.14"/>
+</g>
+<!-- module~casadimension -->
+<g id="module~~cable_param_module~~UsesGraph_node9" class="node">
+<title>module~casadimension</title>
+<g id="a_module~~cable_param_module~~UsesGraph_node9"><a xlink:href=".././module/casadimension.html" xlink:title="casadimension">
+<polygon fill="#337ab7" stroke="#337ab7" points="298.5,-128 205.5,-128 205.5,-104 298.5,-104 298.5,-128"/>
+<text text-anchor="middle" x="252" y="-113.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">casadimension</text>
+</a>
+</g>
+</g>
+<!-- module~cable_param_module&#45;&gt;module~casadimension -->
+<g id="module~~cable_param_module~~UsesGraph_edge8" class="edge">
+<title>module~cable_param_module&#45;&gt;module~casadimension</title>
+<path fill="none" stroke="#255000" stroke-dasharray="5,2" d="M538.46,-170.03C506.24,-175.37 465.51,-180.04 429,-178"/>
+<path fill="none" stroke="#255000" stroke-dasharray="5,2" d="M427,-178C395.24,-176.22 387.19,-171.64 358,-159 340.79,-151.55 339.11,-144.68 322,-137 317.59,-135.02 312.94,-133.16 308.23,-131.43"/>
+<polygon fill="#255000" stroke="#255000" points="309.11,-128.03 298.51,-128.06 306.81,-134.64 309.11,-128.03"/>
+</g>
+<!-- module~casavariable -->
+<g id="module~~cable_param_module~~UsesGraph_node10" class="node">
+<title>module~casavariable</title>
+<g id="a_module~~cable_param_module~~UsesGraph_node10"><a xlink:href=".././module/casavariable.html" xlink:title="casavariable">
+<polygon fill="#337ab7" stroke="#337ab7" points="468.5,-150 387.5,-150 387.5,-126 468.5,-126 468.5,-150"/>
+<text text-anchor="middle" x="428" y="-135.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">casavariable</text>
+</a>
+</g>
+</g>
+<!-- module~cable_param_module&#45;&gt;module~casavariable -->
+<g id="module~~cable_param_module~~UsesGraph_edge9" class="edge">
+<title>module~cable_param_module&#45;&gt;module~casavariable</title>
+<path fill="none" stroke="#255000" stroke-dasharray="5,2" d="M533.97,-150.5C515.92,-148.35 496.5,-146.04 479.33,-143.99"/>
+<polygon fill="#255000" stroke="#255000" points="479.31,-140.46 468.96,-142.76 478.48,-147.42 479.31,-140.46"/>
+</g>
+<!-- module~phenvariable -->
+<g id="module~~cable_param_module~~UsesGraph_node11" class="node">
+<title>module~phenvariable</title>
+<g id="a_module~~cable_param_module~~UsesGraph_node11"><a xlink:href=".././module/phenvariable.html" xlink:title="phenvariable">
+<polygon fill="#337ab7" stroke="#337ab7" points="469.5,-108 386.5,-108 386.5,-84 469.5,-84 469.5,-108"/>
+<text text-anchor="middle" x="428" y="-93.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">phenvariable</text>
+</a>
+</g>
+</g>
+<!-- module~cable_param_module&#45;&gt;module~phenvariable -->
+<g id="module~~cable_param_module~~UsesGraph_edge10" class="edge">
+<title>module~cable_param_module&#45;&gt;module~phenvariable</title>
+<path fill="none" stroke="#255000" stroke-dasharray="5,2" d="M569.96,-145.97C550.22,-137.39 522.69,-125.85 498,-117 492.04,-114.87 485.75,-112.76 479.48,-110.74"/>
+<polygon fill="#255000" stroke="#255000" points="480.3,-107.33 469.72,-107.67 478.21,-114.01 480.3,-107.33"/>
+</g>
+<!-- module~cable_runtime_opts_mod -->
+<g id="module~~cable_param_module~~UsesGraph_node12" class="node">
+<title>module~cable_runtime_opts_mod</title>
+<g id="a_module~~cable_param_module~~UsesGraph_node12"><a xlink:href=".././module/cable_runtime_opts_mod.html" xlink:title="cable_runtime_opts_mod">
+<polygon fill="#337ab7" stroke="#337ab7" points="146,-334 0,-334 0,-310 146,-310 146,-334"/>
+<text text-anchor="middle" x="73" y="-319.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">cable_runtime_opts_mod</text>
+</a>
+</g>
+</g>
+<!-- module~cable_common_module&#45;&gt;module~cable_runtime_opts_mod -->
+<g id="module~~cable_param_module~~UsesGraph_edge11" class="edge">
+<title>module~cable_common_module&#45;&gt;module~cable_runtime_opts_mod</title>
+<path fill="none" stroke="transparent" stroke-dasharray="5,2" d="M181.81,-322C173.37,-322 164.7,-322 156.1,-322"/>
+<polygon fill="transparent" stroke="transparent" points="156.06,-318.5 146.06,-322 156.06,-325.5 156.06,-318.5"/>
+</g>
+<!-- module~cable_io_vars_module&#45;&gt;module~cable_def_types_mod -->
+<g id="module~~cable_param_module~~UsesGraph_edge12" class="edge">
+<title>module~cable_io_vars_module&#45;&gt;module~cable_def_types_mod</title>
+<path fill="none" stroke="#512550" stroke-dasharray="5,2" d="M185.85,-158C173.17,-158 159.8,-158 146.89,-158"/>
+<polygon fill="#512550" stroke="#512550" points="146.66,-154.5 136.66,-158 146.66,-161.5 146.66,-154.5"/>
+</g>
+<!-- module~cable_luc_expt&#45;&gt;module~cable_common_module -->
+<g id="module~~cable_param_module~~UsesGraph_edge13" class="edge">
+<title>module~cable_luc_expt&#45;&gt;module~cable_common_module</title>
+<path fill="none" stroke="#025510" stroke-dasharray="5,2" stroke-opacity="0.007843" d="M402.83,-242.12C389.33,-249.17 372.39,-258.52 358,-268 341.07,-279.15 339.68,-286.09 322,-296 315.4,-299.7 308.16,-303.08 300.94,-306.08"/>
+<polygon fill="#025510" fill-opacity="0.007843" stroke="#025510" stroke-opacity="0.007843" points="299.18,-303.02 291.16,-309.95 301.75,-309.53 299.18,-303.02"/>
+</g>
+<!-- module~cable_luc_expt&#45;&gt;module~cable_def_types_mod -->
+<g id="module~~cable_param_module~~UsesGraph_edge14" class="edge">
+<title>module~cable_luc_expt&#45;&gt;module~cable_def_types_mod</title>
+<path fill="none" stroke="#025510" stroke-dasharray="5,2" stroke-opacity="0.007843" d="M408.66,-242.07C377.15,-261.3 310.56,-295.45 253,-282"/>
+<path fill="none" stroke="#025510" stroke-dasharray="5,2" stroke-opacity="0.007843" d="M251,-282C220.03,-274.76 209.6,-278.81 182,-263 143.4,-240.9 108.41,-201.81 89.28,-178.06"/>
+<polygon fill="#025510" fill-opacity="0.007843" stroke="#025510" stroke-opacity="0.007843" points="91.91,-175.75 82.97,-170.07 86.42,-180.09 91.91,-175.75"/>
+</g>
+<!-- module~cable_luc_expt&#45;&gt;module~cable_io_vars_module -->
+<g id="module~~cable_param_module~~UsesGraph_edge15" class="edge">
+<title>module~cable_luc_expt&#45;&gt;module~cable_io_vars_module</title>
+<path fill="none" stroke="#025510" stroke-dasharray="5,2" stroke-opacity="0.007843" d="M404.52,-217.8C383.57,-206.75 351.24,-190.47 322,-179 316.9,-177 311.53,-175.07 306.13,-173.24"/>
+<polygon fill="#025510" fill-opacity="0.007843" stroke="#025510" stroke-opacity="0.007843" points="307.01,-169.85 296.42,-170.08 304.84,-176.51 307.01,-169.85"/>
+</g>
+<!-- module~casa_ncdf_module -->
+<g id="module~~cable_param_module~~UsesGraph_node13" class="node">
+<title>module~casa_ncdf_module</title>
+<g id="a_module~~cable_param_module~~UsesGraph_node13"><a xlink:href=".././module/casa_ncdf_module.html" xlink:title="casa_ncdf_module">
+<polygon fill="#337ab7" stroke="#337ab7" points="308,-254 196,-254 196,-230 308,-230 308,-254"/>
+<text text-anchor="middle" x="252" y="-239.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">casa_ncdf_module</text>
+</a>
+</g>
+</g>
+<!-- module~cable_luc_expt&#45;&gt;module~casa_ncdf_module -->
+<g id="module~~cable_param_module~~UsesGraph_edge16" class="edge">
+<title>module~cable_luc_expt&#45;&gt;module~casa_ncdf_module</title>
+<path fill="none" stroke="#025510" stroke-dasharray="5,2" stroke-opacity="0.007843" d="M374.79,-233.6C357.06,-234.82 337.01,-236.21 318.38,-237.49"/>
+<polygon fill="#025510" fill-opacity="0.007843" stroke="#025510" stroke-opacity="0.007843" points="317.93,-234.01 308.19,-238.19 318.41,-241 317.93,-234.01"/>
+</g>
+<!-- netcdf -->
+<g id="module~~cable_param_module~~UsesGraph_node15" class="node">
+<title>netcdf</title>
+<polygon fill="#337ab7" stroke="#337ab7" points="279,-212 225,-212 225,-188 279,-188 279,-212"/>
+<text text-anchor="middle" x="252" y="-197.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">netcdf</text>
+</g>
+<!-- module~cable_luc_expt&#45;&gt;netcdf -->
+<g id="module~~cable_param_module~~UsesGraph_edge17" class="edge">
+<title>module~cable_luc_expt&#45;&gt;netcdf</title>
+<path fill="none" stroke="#025510" stroke-dasharray="5,2" stroke-opacity="0.007843" d="M374.79,-221C347.29,-216.26 314.23,-210.56 289.5,-206.29"/>
+<polygon fill="#025510" fill-opacity="0.007843" stroke="#025510" stroke-opacity="0.007843" points="289.9,-202.81 279.45,-204.56 288.71,-209.71 289.9,-202.81"/>
+</g>
+<!-- module~grid_constants_mod_cbl -->
+<g id="module~~cable_param_module~~UsesGraph_node14" class="node">
+<title>module~grid_constants_mod_cbl</title>
+<g id="a_module~~cable_param_module~~UsesGraph_node14"><a xlink:href=".././module/grid_constants_mod_cbl.html" xlink:title="grid_constants_mod_cbl">
+<polygon fill="#337ab7" stroke="#337ab7" points="322,-45 182,-45 182,-21 322,-21 322,-45"/>
+<text text-anchor="middle" x="252" y="-30.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">grid_constants_mod_cbl</text>
+</a>
+</g>
+</g>
+<!-- module~cable_pft_params_mod&#45;&gt;module~grid_constants_mod_cbl -->
+<g id="module~~cable_param_module~~UsesGraph_edge18" class="edge">
+<title>module~cable_pft_params_mod&#45;&gt;module~grid_constants_mod_cbl</title>
+<path fill="none" stroke="#025525" stroke-dasharray="5,2" stroke-opacity="0.019608" d="M359.73,-45.88C350.67,-44.79 341.31,-43.66 332.07,-42.54"/>
+<polygon fill="#025525" fill-opacity="0.019608" stroke="#025525" stroke-opacity="0.019608" points="332.45,-39.06 322.11,-41.34 331.61,-46.01 332.45,-39.06"/>
+</g>
+<!-- module~cable_soil_params_mod&#45;&gt;module~grid_constants_mod_cbl -->
+<g id="module~~cable_param_module~~UsesGraph_edge19" class="edge">
+<title>module~cable_soil_params_mod&#45;&gt;module~grid_constants_mod_cbl</title>
+<path fill="none" stroke="#010225" stroke-dasharray="5,2" stroke-opacity="0.019608" d="M357.98,-20.33C349.52,-21.35 340.83,-22.4 332.24,-23.44"/>
+<polygon fill="#010225" fill-opacity="0.019608" stroke="#010225" stroke-opacity="0.019608" points="331.73,-19.97 322.22,-24.65 332.57,-26.92 331.73,-19.97"/>
+</g>
+<!-- module~casadimension&#45;&gt;module~cable_def_types_mod -->
+<g id="module~~cable_param_module~~UsesGraph_edge20" class="edge">
+<title>module~casadimension&#45;&gt;module~cable_def_types_mod</title>
+<path fill="none" stroke="#500255" stroke-dasharray="5,2" d="M205.42,-126.82C183.82,-131.94 157.72,-138.13 134.49,-143.65"/>
+<polygon fill="#500255" stroke="#500255" points="133.65,-140.25 124.73,-145.96 135.27,-147.06 133.65,-140.25"/>
+</g>
+<!-- module~casavariable&#45;&gt;module~casadimension -->
+<g id="module~~cable_param_module~~UsesGraph_edge21" class="edge">
+<title>module~casavariable&#45;&gt;module~casadimension</title>
+<path fill="none" stroke="#204025" stroke-dasharray="5,2" stroke-opacity="0.019608" d="M387.08,-132.95C363.79,-130.01 334.05,-126.25 308.5,-123.02"/>
+<polygon fill="#204025" fill-opacity="0.019608" stroke="#204025" stroke-opacity="0.019608" points="308.93,-119.54 298.57,-121.76 308.05,-126.49 308.93,-119.54"/>
+</g>
+<!-- module~phenvariable&#45;&gt;module~casadimension -->
+<g id="module~~cable_param_module~~UsesGraph_edge22" class="edge">
+<title>module~phenvariable&#45;&gt;module~casadimension</title>
+<path fill="none" stroke="#255015" stroke-dasharray="5,2" stroke-opacity="0.007843" d="M386.2,-100.69C363.16,-103.34 334.03,-106.69 308.89,-109.58"/>
+<polygon fill="#255015" fill-opacity="0.007843" stroke="#255015" stroke-opacity="0.007843" points="308.28,-106.12 298.75,-110.74 309.08,-113.08 308.28,-106.12"/>
+</g>
+</g>
+</svg>
+</div>                <script>
+                  var panmodulecable_param_moduleUsesGraph = svgPanZoom('#modulecable_param_moduleUsesGraph',
+                    {zoomEnabled: true, controlIconsEnabled: true, fit: true, center: true,}
+                  );
+                </script>        <div><a type="button" class="graph-help" data-toggle="modal" href="#graph-help-text">Help</a></div>
+          <div class="modal fade" id="graph-help-text" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                  <h4 class="modal-title" id="-graph-help-label">Graph Key</h4>
+                </div>
+              <div class="modal-body">
+<p>Nodes of different colours represent the following: </p>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.43.0 (0)
+ -->
+<!-- Title: Graph Key Pages: 1 -->
+<svg width="518pt" height="32pt"
+ viewBox="0.00 0.00 517.50 32.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 28)">
+<title>Graph Key</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-28 513.5,-28 513.5,4 -4,4"/>
+<!-- Module -->
+<g id="node1" class="node">
+<title>Module</title>
+<polygon fill="#337ab7" stroke="#337ab7" points="54,-24 0,-24 0,0 54,0 54,-24"/>
+<text text-anchor="middle" x="27" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Module</text>
+</g>
+<!-- Submodule -->
+<g id="node2" class="node">
+<title>Submodule</title>
+<polygon fill="#5bc0de" stroke="#5bc0de" points="145.5,-24 72.5,-24 72.5,0 145.5,0 145.5,-24"/>
+<text text-anchor="middle" x="109" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Submodule</text>
+</g>
+<!-- Subroutine -->
+<g id="node3" class="node">
+<title>Subroutine</title>
+<polygon fill="#d9534f" stroke="#d9534f" points="234,-24 164,-24 164,0 234,0 234,-24"/>
+<text text-anchor="middle" x="199" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Subroutine</text>
+</g>
+<!-- Function -->
+<g id="node4" class="node">
+<title>Function</title>
+<polygon fill="#d94e8f" stroke="#d94e8f" points="310,-24 252,-24 252,0 310,0 310,-24"/>
+<text text-anchor="middle" x="281" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Function</text>
+</g>
+<!-- Program -->
+<g id="node5" class="node">
+<title>Program</title>
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="386,-24 328,-24 328,0 386,0 386,-24"/>
+<text text-anchor="middle" x="357" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Program</text>
+</g>
+<!-- This Page&#39;s Entity -->
+<g id="node6" class="node">
+<title>This Page&#39;s Entity</title>
+<polygon fill="none" stroke="black" points="509.5,-24 404.5,-24 404.5,0 509.5,0 509.5,-24"/>
+<text text-anchor="middle" x="457" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50">This Page&#39;s Entity</text>
+</g>
+</g>
+</svg>
+
+<p>Solid arrows point from a submodule to the (sub)module which it is
+descended from. Dashed arrows point from a module or program unit to 
+modules which it uses.
+</p>
+ Where possible, edges connecting nodes are
+given different colours to make them easier to distinguish in
+large graphs.</div>
+            </div>
+          </div>
+        </div>
+          </li>
+      </ul>
+    </div>
+
+          <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Used by</h3>
+      </div>
+      <ul class="list-group">
+          <li class="list-group-item">
+            <div class="depgraph"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.43.0 (0)
+ -->
+<!-- Title: module~~cable_param_module~~UsedByGraph Pages: 1 -->
+<svg id="modulecable_param_moduleUsedByGraph" width="557pt" height="158pt"
+ viewBox="0.00 0.00 557.00 158.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="module~~cable_param_module~~UsedByGraph" class="graph" transform="scale(1 1) rotate(0) translate(4 154)">
+<title>module~~cable_param_module~~UsedByGraph</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-154 553,-154 553,4 -4,4"/>
+<!-- module~cable_param_module -->
+<g id="module~~cable_param_module~~UsedByGraph_node1" class="node">
+<title>module~cable_param_module</title>
+<polygon fill="none" stroke="black" points="128,-87 0,-87 0,-63 128,-63 128,-87"/>
+<text text-anchor="middle" x="64" y="-72.6" font-family="Helvetica,sans-Serif" font-size="10.50">cable_param_module</text>
+</g>
+<!-- module~cable_input_module -->
+<g id="module~~cable_param_module~~UsedByGraph_node2" class="node">
+<title>module~cable_input_module</title>
+<g id="a_module~~cable_param_module~~UsedByGraph_node2"><a xlink:href=".././module/cable_input_module.html" xlink:title="cable_input_module">
+<polygon fill="#337ab7" stroke="#337ab7" points="284,-87 164,-87 164,-63 284,-63 284,-87"/>
+<text text-anchor="middle" x="224" y="-72.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">cable_input_module</text>
+</a>
+</g>
+</g>
+<!-- module~cable_input_module&#45;&gt;module~cable_param_module -->
+<g id="module~~cable_param_module~~UsedByGraph_edge1" class="edge">
+<title>module~cable_input_module&#45;&gt;module~cable_param_module</title>
+<path fill="none" stroke="#255000" stroke-dasharray="5,2" d="M163.72,-75C155.35,-75 146.66,-75 138.07,-75"/>
+<polygon fill="#255000" stroke="#255000" points="138.05,-71.5 128.05,-75 138.05,-78.5 138.05,-71.5"/>
+</g>
+<!-- proc~mpidrv_master -->
+<g id="module~~cable_param_module~~UsedByGraph_node3" class="node">
+<title>proc~mpidrv_master</title>
+<g id="a_module~~cable_param_module~~UsedByGraph_node3"><a xlink:href=".././proc/mpidrv_master.html" xlink:title="cable_mpimaster::mpidrv_master">
+<polygon fill="#d9534f" stroke="#d9534f" points="531,-150 338,-150 338,-126 531,-126 531,-150"/>
+<text text-anchor="middle" x="434.5" y="-135.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">cable_mpimaster::mpidrv_master</text>
+</a>
+</g>
+</g>
+<!-- proc~mpidrv_master&#45;&gt;module~cable_input_module -->
+<g id="module~~cable_param_module~~UsedByGraph_edge2" class="edge">
+<title>proc~mpidrv_master&#45;&gt;module~cable_input_module</title>
+<path fill="none" stroke="#255000" stroke-dasharray="5,2" d="M355.07,-125.97C343.21,-123.44 331.2,-120.46 320,-117 298.63,-110.4 275.67,-100.33 257.67,-91.71"/>
+<polygon fill="#255000" stroke="#255000" points="258.75,-88.34 248.23,-87.1 255.68,-94.64 258.75,-88.34"/>
+</g>
+<!-- proc~mpidrv_worker -->
+<g id="module~~cable_param_module~~UsedByGraph_node4" class="node">
+<title>proc~mpidrv_worker</title>
+<g id="a_module~~cable_param_module~~UsedByGraph_node4"><a xlink:href=".././proc/mpidrv_worker.html" xlink:title="cable_mpiworker::mpidrv_worker">
+<polygon fill="#d9534f" stroke="#d9534f" points="530,-108 339,-108 339,-84 530,-84 530,-108"/>
+<text text-anchor="middle" x="434.5" y="-93.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">cable_mpiworker::mpidrv_worker</text>
+</a>
+</g>
+</g>
+<!-- proc~mpidrv_worker&#45;&gt;module~cable_input_module -->
+<g id="module~~cable_param_module~~UsedByGraph_edge3" class="edge">
+<title>proc~mpidrv_worker&#45;&gt;module~cable_input_module</title>
+<path fill="none" stroke="#255000" stroke-dasharray="5,2" d="M338.71,-86.45C323.73,-84.94 308.49,-83.41 294.24,-81.97"/>
+<polygon fill="#255000" stroke="#255000" points="294.36,-78.47 284.06,-80.95 293.66,-85.43 294.36,-78.47"/>
+</g>
+<!-- proc~worker_cable_params -->
+<g id="module~~cable_param_module~~UsedByGraph_node5" class="node">
+<title>proc~worker_cable_params</title>
+<g id="a_module~~cable_param_module~~UsedByGraph_node5"><a xlink:href=".././proc/worker_cable_params.html" xlink:title="cable_mpiworker::worker_cable_params">
+<polygon fill="#d9534f" stroke="#d9534f" points="549,-66 320,-66 320,-42 549,-42 549,-66"/>
+<text text-anchor="middle" x="434.5" y="-51.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">cable_mpiworker::worker_cable_params</text>
+</a>
+</g>
+</g>
+<!-- proc~worker_cable_params&#45;&gt;module~cable_input_module -->
+<g id="module~~cable_param_module~~UsedByGraph_edge4" class="edge">
+<title>proc~worker_cable_params&#45;&gt;module~cable_input_module</title>
+<path fill="none" stroke="#255000" stroke-dasharray="5,2" d="M319.79,-65.45C311.05,-66.33 302.4,-67.2 294.09,-68.04"/>
+<polygon fill="#255000" stroke="#255000" points="293.74,-64.56 284.14,-69.04 294.44,-71.52 293.74,-64.56"/>
+</g>
+<!-- program~cable_offline_driver -->
+<g id="module~~cable_param_module~~UsedByGraph_node6" class="node">
+<title>program~cable_offline_driver</title>
+<g id="a_module~~cable_param_module~~UsedByGraph_node6"><a xlink:href=".././program/cable_offline_driver.html" xlink:title="cable_offline_driver">
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="493.5,-24 375.5,-24 375.5,0 493.5,0 493.5,-24"/>
+<text text-anchor="middle" x="434.5" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">cable_offline_driver</text>
+</a>
+</g>
+</g>
+<!-- program~cable_offline_driver&#45;&gt;module~cable_input_module -->
+<g id="module~~cable_param_module~~UsedByGraph_edge5" class="edge">
+<title>program~cable_offline_driver&#45;&gt;module~cable_input_module</title>
+<path fill="none" stroke="#255000" stroke-dasharray="5,2" d="M375.42,-20.06C357.44,-23.27 337.71,-27.53 320,-33 298.63,-39.6 275.67,-49.67 257.67,-58.29"/>
+<polygon fill="#255000" stroke="#255000" points="255.68,-55.36 248.23,-62.9 258.75,-61.66 255.68,-55.36"/>
+</g>
+</g>
+</svg>
+</div>        <div><a type="button" class="graph-help" data-toggle="modal" href="#graph-help-text">Help</a></div>
+          <div class="modal fade" id="graph-help-text" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                  <h4 class="modal-title" id="-graph-help-label">Graph Key</h4>
+                </div>
+              <div class="modal-body">
+<p>Nodes of different colours represent the following: </p>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.43.0 (0)
+ -->
+<!-- Title: Graph Key Pages: 1 -->
+<svg width="518pt" height="32pt"
+ viewBox="0.00 0.00 517.50 32.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 28)">
+<title>Graph Key</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-28 513.5,-28 513.5,4 -4,4"/>
+<!-- Module -->
+<g id="node1" class="node">
+<title>Module</title>
+<polygon fill="#337ab7" stroke="#337ab7" points="54,-24 0,-24 0,0 54,0 54,-24"/>
+<text text-anchor="middle" x="27" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Module</text>
+</g>
+<!-- Submodule -->
+<g id="node2" class="node">
+<title>Submodule</title>
+<polygon fill="#5bc0de" stroke="#5bc0de" points="145.5,-24 72.5,-24 72.5,0 145.5,0 145.5,-24"/>
+<text text-anchor="middle" x="109" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Submodule</text>
+</g>
+<!-- Subroutine -->
+<g id="node3" class="node">
+<title>Subroutine</title>
+<polygon fill="#d9534f" stroke="#d9534f" points="234,-24 164,-24 164,0 234,0 234,-24"/>
+<text text-anchor="middle" x="199" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Subroutine</text>
+</g>
+<!-- Function -->
+<g id="node4" class="node">
+<title>Function</title>
+<polygon fill="#d94e8f" stroke="#d94e8f" points="310,-24 252,-24 252,0 310,0 310,-24"/>
+<text text-anchor="middle" x="281" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Function</text>
+</g>
+<!-- Program -->
+<g id="node5" class="node">
+<title>Program</title>
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="386,-24 328,-24 328,0 386,0 386,-24"/>
+<text text-anchor="middle" x="357" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Program</text>
+</g>
+<!-- This Page&#39;s Entity -->
+<g id="node6" class="node">
+<title>This Page&#39;s Entity</title>
+<polygon fill="none" stroke="black" points="509.5,-24 404.5,-24 404.5,0 509.5,0 509.5,-24"/>
+<text text-anchor="middle" x="457" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50">This Page&#39;s Entity</text>
+</g>
+</g>
+</svg>
+
+<p>Solid arrows point from a submodule to the (sub)module which it is
+descended from. Dashed arrows point from a module or program unit to 
+modules which it uses.
+</p>
+ Where possible, edges connecting nodes are
+given different colours to make them easier to distinguish in
+large graphs.</div>
+            </div>
+          </div>
+        </div>
+          </li>
+      </ul>
+    </div>
+
+      <br>
+
+      <section class="visible-xs visible-sm hidden-md">
+          <h3>Contents</h3>
+  
+      <div class="panel panel-primary">
+      <div class="panel-heading text-left">
+        <h3 class="panel-title">
+          <a data-toggle="collapse" href="#vars-1">Variables</a>
+        </h3>
+      </div>
+      <div id="vars-1" class="panel-collapse collapse">
+        <div class="list-group">
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-patches_in_parfile">patches_in_parfile</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-classification">classification</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-inveg~2">inVeg</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-inpfrac~2">inPFrac</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-insoil">inSoil</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-inwb">inWB</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-intgg">inTGG</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-inlon">inLon</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-inlat">inLat</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-inalb">inALB</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-insnd">inSND</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-inlai">inLAI</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-inarea">inArea</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-insorder">inSorder</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-inndep">inNdep</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-innfix">inNfix</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-inpwea">inPwea</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-inpdust">inPdust</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-inswilt">inswilt</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-insfc">insfc</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-inssat">inssat</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-inbch">inbch</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-inhyds">inhyds</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-insucs">insucs</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-inrhosoil">inrhosoil</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-incss">incss</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-incnsd">incnsd</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-inclay">inclay</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-insilt">insilt</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-insand">insand</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-found_explicit_gw_parameters">found_explicit_gw_parameters</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-ingwbch">inGWbch</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-ingwssat">inGWssat</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-ingwhyds">inGWhyds</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-ingwsucs">inGWsucs</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-ingwrhosoil">inGWrhosoil</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-ingwclay">inGWclay</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-ingwsilt">inGWsilt</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-ingwsand">inGWsand</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-ingwwatr">inGWWatr</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-inwatr">inWatr</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-inslope">inSlope</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-ingwdz">inGWdz</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-inslopestd">inSlopeSTD</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-inorg">inORG</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#variable-insoilcolor">inSoilColor</a>
+        </div>
+      </div>
+    </div>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      <div class="panel panel-primary">
+      <div class="panel-heading text-left">
+        <h3 class="panel-title">
+          <a data-toggle="collapse" href="#subs-1">Subroutines</a>
+        </h3>
+      </div>
+      <div id="subs-1" class="panel-collapse collapse">
+        <div class="list-group">
+            <a class="list-group-item" href="../module/cable_param_module.html#proc-get_default_params">get_default_params</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#proc-read_gridinfo">read_gridinfo</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#proc-spatialsoil">spatialSoil</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#proc-read_soilcolor">read_soilcolor</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#proc-nsflip">NSflip</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#proc-get_land_index">get_land_index</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#proc-countpatch">countPatch</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#proc-write_default_params">write_default_params</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#proc-write_cnp_params">write_cnp_params</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#proc-derived_parameters">derived_parameters</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#proc-check_parameter_values">check_parameter_values</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#proc-report_parameters">report_parameters</a>
+            <a class="list-group-item" href="../module/cable_param_module.html#proc-init_veg_from_vegin">init_veg_from_vegin</a>
+        </div>
+      </div>
+    </div>
+
+  
+  
+  
+  
+  
+  
+
+
+      </section>
+      <br class="visible-xs visible-sm hidden-md">
+
+
+        <section>
+          <h2>Variables</h2>
+            <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th>Type</th>
+<th>Visibility</th>        <th>Attributes</th>
+        <th></th>
+        <th>Name</th>
+<th></th><th>Initial</th>        <th></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-patches_in_parfile"></span>
+              integer,
+            </td>
+              <td>private</td>
+            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>patches_in_parfile</strong></td>
+<td> =</td>
+                <td>4</td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-classification"></span>
+              character(len=4),
+            </td>
+              <td>private</td>
+            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>classification</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-inveg~2"></span>
+              integer,
+            </td>
+              <td>private,</td>
+            <td>
+              DIMENSION(:, :, :), ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>inVeg</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-inpfrac~2"></span>
+              real,
+            </td>
+              <td>private,</td>
+            <td>
+              DIMENSION(:, :, :), ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>inPFrac</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-insoil"></span>
+              integer,
+            </td>
+              <td>private,</td>
+            <td>
+              DIMENSION(:, :), ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>inSoil</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-inwb"></span>
+              real,
+            </td>
+              <td>private,</td>
+            <td>
+              DIMENSION(:, :, :, :), ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>inWB</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-intgg"></span>
+              real,
+            </td>
+              <td>private,</td>
+            <td>
+              DIMENSION(:, :, :, :), ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>inTGG</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-inlon"></span>
+              real,
+            </td>
+              <td>private,</td>
+            <td>
+              DIMENSION(:), ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>inLon</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-inlat"></span>
+              real,
+            </td>
+              <td>private,</td>
+            <td>
+              DIMENSION(:), ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>inLat</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-inalb"></span>
+              real,
+            </td>
+              <td>private,</td>
+            <td>
+              DIMENSION(:, :, :, :), ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>inALB</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-insnd"></span>
+              real,
+            </td>
+              <td>private,</td>
+            <td>
+              DIMENSION(:, :, :, :), ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>inSND</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-inlai"></span>
+              real,
+            </td>
+              <td>private,</td>
+            <td>
+              DIMENSION(:, :, :), ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>inLAI</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-inarea"></span>
+              real,
+            </td>
+              <td>private,</td>
+            <td>
+              DIMENSION(:, :), ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>inArea</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-insorder"></span>
+              integer,
+            </td>
+              <td>private,</td>
+            <td>
+              DIMENSION(:, :), ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>inSorder</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-inndep"></span>
+              real,
+            </td>
+              <td>private,</td>
+            <td>
+              DIMENSION(:, :), ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>inNdep</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-innfix"></span>
+              real,
+            </td>
+              <td>private,</td>
+            <td>
+              DIMENSION(:, :), ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>inNfix</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-inpwea"></span>
+              real,
+            </td>
+              <td>private,</td>
+            <td>
+              DIMENSION(:, :), ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>inPwea</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-inpdust"></span>
+              real,
+            </td>
+              <td>private,</td>
+            <td>
+              DIMENSION(:, :), ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>inPdust</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-inswilt"></span>
+              real,
+            </td>
+              <td>private,</td>
+            <td>
+              DIMENSION(:, :), ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>inswilt</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-insfc"></span>
+              real,
+            </td>
+              <td>private,</td>
+            <td>
+              DIMENSION(:, :), ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>insfc</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-inssat"></span>
+              real,
+            </td>
+              <td>private,</td>
+            <td>
+              DIMENSION(:, :), ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>inssat</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-inbch"></span>
+              real,
+            </td>
+              <td>private,</td>
+            <td>
+              DIMENSION(:, :), ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>inbch</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-inhyds"></span>
+              real,
+            </td>
+              <td>private,</td>
+            <td>
+              DIMENSION(:, :), ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>inhyds</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-insucs"></span>
+              real,
+            </td>
+              <td>private,</td>
+            <td>
+              DIMENSION(:, :), ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>insucs</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-inrhosoil"></span>
+              real,
+            </td>
+              <td>private,</td>
+            <td>
+              DIMENSION(:, :), ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>inrhosoil</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-incss"></span>
+              real,
+            </td>
+              <td>private,</td>
+            <td>
+              DIMENSION(:, :), ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>incss</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-incnsd"></span>
+              real,
+            </td>
+              <td>private,</td>
+            <td>
+              DIMENSION(:, :), ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>incnsd</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-inclay"></span>
+              real,
+            </td>
+              <td>private,</td>
+            <td>
+              DIMENSION(:, :), ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>inclay</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-insilt"></span>
+              real,
+            </td>
+              <td>private,</td>
+            <td>
+              DIMENSION(:, :), ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>insilt</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-insand"></span>
+              real,
+            </td>
+              <td>private,</td>
+            <td>
+              DIMENSION(:, :), ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>insand</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-found_explicit_gw_parameters"></span>
+              logical,
+            </td>
+              <td>private</td>
+            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>found_explicit_gw_parameters</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-ingwbch"></span>
+              real,
+            </td>
+              <td>private,</td>
+            <td>
+              DIMENSION(:, :), ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>inGWbch</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-ingwssat"></span>
+              real,
+            </td>
+              <td>private,</td>
+            <td>
+              DIMENSION(:, :), ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>inGWssat</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-ingwhyds"></span>
+              real,
+            </td>
+              <td>private,</td>
+            <td>
+              DIMENSION(:, :), ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>inGWhyds</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-ingwsucs"></span>
+              real,
+            </td>
+              <td>private,</td>
+            <td>
+              DIMENSION(:, :), ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>inGWsucs</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-ingwrhosoil"></span>
+              real,
+            </td>
+              <td>private,</td>
+            <td>
+              DIMENSION(:, :), ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>inGWrhosoil</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-ingwclay"></span>
+              real,
+            </td>
+              <td>private,</td>
+            <td>
+              DIMENSION(:, :), ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>inGWclay</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-ingwsilt"></span>
+              real,
+            </td>
+              <td>private,</td>
+            <td>
+              DIMENSION(:, :), ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>inGWsilt</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-ingwsand"></span>
+              real,
+            </td>
+              <td>private,</td>
+            <td>
+              DIMENSION(:, :), ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>inGWsand</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-ingwwatr"></span>
+              real,
+            </td>
+              <td>private,</td>
+            <td>
+              DIMENSION(:, :), ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>inGWWatr</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-inwatr"></span>
+              real,
+            </td>
+              <td>private,</td>
+            <td>
+              DIMENSION(:, :), ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>inWatr</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-inslope"></span>
+              real,
+            </td>
+              <td>private,</td>
+            <td>
+              DIMENSION(:, :), ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>inSlope</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-ingwdz"></span>
+              real,
+            </td>
+              <td>private,</td>
+            <td>
+              DIMENSION(:, :), ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>inGWdz</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-inslopestd"></span>
+              real,
+            </td>
+              <td>private,</td>
+            <td>
+              DIMENSION(:, :), ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>inSlopeSTD</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-inorg"></span>
+              real,
+            </td>
+              <td>private,</td>
+            <td>
+              DIMENSION(:, :), ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>inORG</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-insoilcolor"></span>
+              integer,
+            </td>
+              <td>private,</td>
+            <td>
+              DIMENSION(:, :), ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>inSoilColor</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+        </section>
+        <br>
+
+
+
+
+
+
+        <section>
+          <h2>Subroutines</h2>
+              <div class="panel panel-default">
+    <div class="panel-heading codesum"><span class="anchor" id="proc-get_default_params"></span><h3>public  subroutine <a href='../proc/get_default_params.html'>get_default_params</a>(logn, vegparmnew, LUC_EXPT)  
+</h3></div>
+    <div class="panel-body">
+          
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th>Type</th>
+<th>Intent</th><th>Optional</th>        <th>Attributes</th>
+        <th></th>
+        <th>Name</th>
+        <th></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>logn</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              logical,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>vegparmnew</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              type(<a href='../type/luc_expt_type.html'>LUC_EXPT_TYPE</a>),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>LUC_EXPT</strong></td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="panel panel-default">
+    <div class="panel-heading codesum"><span class="anchor" id="proc-read_gridinfo"></span><h3>private  subroutine <a href='../proc/read_gridinfo.html'>read_gridinfo</a>(nlon, nlat, npatch)  
+</h3></div>
+    <div class="panel-body">
+          
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th>Type</th>
+<th>Intent</th><th>Optional</th>        <th>Attributes</th>
+        <th></th>
+        <th>Name</th>
+        <th></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(out)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>nlon</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(out)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>nlat</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>npatch</strong></td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="panel panel-default">
+    <div class="panel-heading codesum"><span class="anchor" id="proc-spatialsoil"></span><h3>private  subroutine <a href='../proc/spatialsoil.html'>spatialSoil</a>(nlon, nlat, logn)  
+</h3></div>
+    <div class="panel-body">
+          
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th>Type</th>
+<th>Intent</th><th>Optional</th>        <th>Attributes</th>
+        <th></th>
+        <th>Name</th>
+        <th></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>nlon</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>nlat</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>logn</strong></td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="panel panel-default">
+    <div class="panel-heading codesum"><span class="anchor" id="proc-read_soilcolor"></span><h3>private  subroutine <a href='../proc/read_soilcolor.html'>read_soilcolor</a>(logn)  
+</h3></div>
+    <div class="panel-body">
+          
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th>Type</th>
+<th>Intent</th><th>Optional</th>        <th>Attributes</th>
+        <th></th>
+        <th>Name</th>
+        <th></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>logn</strong></td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="panel panel-default">
+    <div class="panel-heading codesum"><span class="anchor" id="proc-nsflip"></span><h3>private  subroutine <a href='../proc/nsflip.html'>NSflip</a>(nlon, nlat, invar)  
+</h3></div>
+    <div class="panel-body">
+          
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th>Type</th>
+<th>Intent</th><th>Optional</th>        <th>Attributes</th>
+        <th></th>
+        <th>Name</th>
+        <th></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>nlon</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>nlat</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              real,
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>invar</strong>(nlon,nlat)</td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="panel panel-default">
+    <div class="panel-heading codesum"><span class="anchor" id="proc-get_land_index"></span><h3>private  subroutine <a href='../proc/get_land_index.html'>get_land_index</a>(nlon, nlat)  
+</h3></div>
+    <div class="panel-body">
+          
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th>Type</th>
+<th>Intent</th><th>Optional</th>        <th>Attributes</th>
+        <th></th>
+        <th>Name</th>
+        <th></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>nlon</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>nlat</strong></td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="panel panel-default">
+    <div class="panel-heading codesum"><span class="anchor" id="proc-countpatch"></span><h3>private  subroutine <a href='../proc/countpatch.html'>countPatch</a>(nlon, nlat, npatch)  
+</h3></div>
+    <div class="panel-body">
+          
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th>Type</th>
+<th>Intent</th><th>Optional</th>        <th>Attributes</th>
+        <th></th>
+        <th>Name</th>
+        <th></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>nlon</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>nlat</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>npatch</strong></td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="panel panel-default">
+    <div class="panel-heading codesum"><span class="anchor" id="proc-write_default_params"></span><h3>public  subroutine <a href='../proc/write_default_params.html'>write_default_params</a>(met, air, ssnow, veg, bgc, soil, canopy, rough, rad, logn, vegparmnew, month, TFRZ, LUC_EXPT)  
+</h3></div>
+    <div class="panel-body">
+          
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th>Type</th>
+<th>Intent</th><th>Optional</th>        <th>Attributes</th>
+        <th></th>
+        <th>Name</th>
+        <th></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              type(<a href='../type/met_type.html'>met_type</a>),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>met</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              type(<a href='../type/air_type.html'>air_type</a>),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>air</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              type(<a href='../type/soil_snow_type.html'>soil_snow_type</a>),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>ssnow</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              type(<a href='../type/veg_parameter_type.html'>veg_parameter_type</a>),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>veg</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              type(<a href='../type/bgc_pool_type.html'>bgc_pool_type</a>),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>bgc</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              type(<a href='../type/soil_parameter_type.html'>soil_parameter_type</a>),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>soil</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              type(<a href='../type/canopy_type.html'>canopy_type</a>),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>canopy</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              type(<a href='../type/roughness_type.html'>roughness_type</a>),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>rough</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              type(<a href='../type/radiation_type.html'>radiation_type</a>),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>rad</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>logn</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              logical,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>vegparmnew</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>month</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              real,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>TFRZ</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              type(<a href='../type/luc_expt_type.html'>LUC_EXPT_TYPE</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>LUC_EXPT</strong></td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="panel panel-default">
+    <div class="panel-heading codesum"><span class="anchor" id="proc-write_cnp_params"></span><h3>public  subroutine <a href='../proc/write_cnp_params.html'>write_cnp_params</a>(veg, casaflux, casamet)  
+</h3></div>
+    <div class="panel-body">
+          
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th>Type</th>
+<th>Intent</th><th>Optional</th>        <th>Attributes</th>
+        <th></th>
+        <th>Name</th>
+        <th></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              type(<a href='../type/veg_parameter_type.html'>veg_parameter_type</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>veg</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              type(<a href='../type/casa_flux.html'>casa_flux</a>),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>casaflux</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              type(<a href='../type/casa_met.html'>casa_met</a>),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>casamet</strong></td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="panel panel-default">
+    <div class="panel-heading codesum"><span class="anchor" id="proc-derived_parameters"></span><h3>public  subroutine <a href='../proc/derived_parameters.html'>derived_parameters</a>(soil, sum_flux, bal, ssnow, veg, rough)  
+</h3></div>
+    <div class="panel-body">
+          
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th>Type</th>
+<th>Intent</th><th>Optional</th>        <th>Attributes</th>
+        <th></th>
+        <th>Name</th>
+        <th></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              type(<a href='../type/soil_parameter_type.html'>soil_parameter_type</a>),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>soil</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              type(<a href='../type/sum_flux_type.html'>sum_flux_type</a>),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>sum_flux</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              type(<a href='../type/balances_type.html'>balances_type</a>),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>bal</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              type(<a href='../type/soil_snow_type.html'>soil_snow_type</a>),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>ssnow</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              type(<a href='../type/veg_parameter_type.html'>veg_parameter_type</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>veg</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              type(<a href='../type/roughness_type.html'>roughness_type</a>),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>rough</strong></td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="panel panel-default">
+    <div class="panel-heading codesum"><span class="anchor" id="proc-check_parameter_values"></span><h3>public  subroutine <a href='../proc/check_parameter_values.html'>check_parameter_values</a>(soil, veg, ssnow)  
+</h3></div>
+    <div class="panel-body">
+          
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th>Type</th>
+<th>Intent</th><th>Optional</th>        <th>Attributes</th>
+        <th></th>
+        <th>Name</th>
+        <th></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              type(<a href='../type/soil_parameter_type.html'>soil_parameter_type</a>),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>soil</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              type(<a href='../type/veg_parameter_type.html'>veg_parameter_type</a>),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>veg</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              type(<a href='../type/soil_snow_type.html'>soil_snow_type</a>),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>ssnow</strong></td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="panel panel-default">
+    <div class="panel-heading codesum"><span class="anchor" id="proc-report_parameters"></span><h3>public  subroutine <a href='../proc/report_parameters.html'>report_parameters</a>(logn, soil, veg, bgc, rough, ssnow, canopy, casamet, casapool, casaflux, phen, vegparmnew, verbose)  
+</h3></div>
+    <div class="panel-body">
+          
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th>Type</th>
+<th>Intent</th><th>Optional</th>        <th>Attributes</th>
+        <th></th>
+        <th>Name</th>
+        <th></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>logn</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              type(<a href='../type/soil_parameter_type.html'>soil_parameter_type</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>soil</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              type(<a href='../type/veg_parameter_type.html'>veg_parameter_type</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>veg</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              type(<a href='../type/bgc_pool_type.html'>bgc_pool_type</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>bgc</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              type(<a href='../type/roughness_type.html'>roughness_type</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>rough</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              type(<a href='../type/soil_snow_type.html'>soil_snow_type</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>ssnow</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              type(<a href='../type/canopy_type.html'>canopy_type</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>canopy</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              type(<a href='../type/casa_met.html'>casa_met</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>casamet</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              type(<a href='../type/casa_pool.html'>casa_pool</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>casapool</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              type(<a href='../type/casa_flux.html'>casa_flux</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>casaflux</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              type(<a href='../type/phen_variable.html'>phen_variable</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>phen</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              logical,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>vegparmnew</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              logical,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>verbose</strong></td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="panel panel-default">
+    <div class="panel-heading codesum"><span class="anchor" id="proc-init_veg_from_vegin"></span><h3>private  subroutine <a href='../proc/init_veg_from_vegin.html'>init_veg_from_vegin</a>(ifmp, fmp, veg, soil_zse)  
+</h3></div>
+    <div class="panel-body">
+          
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th>Type</th>
+<th>Intent</th><th>Optional</th>        <th>Attributes</th>
+        <th></th>
+        <th>Name</th>
+        <th></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer
+            </td>
+<td></td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>ifmp</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer
+            </td>
+<td></td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>fmp</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              type(<a href='../type/veg_parameter_type.html'>veg_parameter_type</a>)
+            </td>
+<td></td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>veg</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              real,
+            </td>
+<td></td>
+              <td></td>            <td>
+              DIMENSION(ms)
+            </td>
+            <td>::</td>
+            <td><strong>soil_zse</strong></td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+        </section>
+        <br>
+
+
+
+    </div>
+  </div>
+
+      <hr>
+    </div> <!-- /container -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-6 col-md-6"><p>CABLE was developed by CABLE community<br>&copy; 2023 
+</p>
+          </div>
+          <div class="col-xs-6 col-md-6">
+            <p class="text-right">
+              Documentation generated by
+              <a href="https://github.com/Fortran-FOSS-Programmers/ford">FORD</a>
+            </p>
+          </div>
+        </div>
+        <br>
+      </div> <!-- /container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+         ================================================== -->
+         <!-- Placed at the end of the document so the pages load faster -->
+    <!--
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        -->
+        <script src="../js/bootstrap.min.js"></script>
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <script src="../js/ie10-viewport-bug-workaround.js"></script>
+
+        <!-- MathJax JavaScript
+             ================================================== -->
+             <!-- Placed at the end of the document so the pages load faster -->
+        <script type="text/x-mathjax-config">
+          MathJax.Hub.Config({
+          TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } },
+          jax: ['input/TeX','input/MathML','output/HTML-CSS'],
+          extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']
+          });
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+          <script src="../tipuesearch/tipuesearch_content.js"></script>
+          <script src="../tipuesearch/tipuesearch_set.js"></script>
+          <script src="../tipuesearch/tipuesearch.js"></script>
+
+  </body>
+</html>
