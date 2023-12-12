@@ -40,6 +40,7 @@ host_gadi()
    fi
    
    if [[ $1 = 'mpi' ]]; then
+      export CFLAGS='-traceback -g'
     build_build mpi
    else
     build_build
